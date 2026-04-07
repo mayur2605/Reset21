@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <!-- Full Logo: RESET21 -->
+  <!-- Shadow layer -->
+  <rect x="345" y="28" width="138" height="110" fill="#1C293C" rx="0"/>
+  <!-- Yellow box for 21 -->
+  <rect x="340" y="22" width="138" height="110" fill="#FDC800" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- RESET text -->
+  <text x="30" y="115" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="100" fill="#1C293C" letter-spacing="-2">RESET</text>
+  <!-- 21 text inside yellow box -->
+  <text x="352" y="115" font-family="JetBrains Mono, monospace" font-weight="900" font-size="100" fill="#1C293C" letter-spacing="-2">21</text>
+  <!-- Tagline underline -->
+  <line x1="30" y1="135" x2="478" y2="135" stroke="#1C293C" stroke-width="3"/>
+  <!-- Tagline -->
+  <text x="30" y="165" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="22" fill="#1C293C" letter-spacing="4">21 DAYS. NO EXCUSES.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="400" height="700">
+  <!-- Share Card Template -->
+  <!-- Background -->
+  <rect width="400" height="700" fill="#FBFBF9" rx="0"/>
+  <!-- Thick border -->
+  <rect x="6" y="6" width="388" height="688" fill="none" stroke="#1C293C" stroke-width="4" rx="0"/>
+
+  <!-- Top branding bar -->
+  <rect x="6" y="6" width="388" height="60" fill="#1C293C" rx="0"/>
+  <text x="200" y="46" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="24" fill="#FDC800" text-anchor="middle" letter-spacing="4">RESET21</text>
+
+  <!-- DAY number -->
+  <text x="200" y="160" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="32" fill="#1C293C" text-anchor="middle" letter-spacing="6">DAY</text>
+  <text x="200" y="260" font-family="JetBrains Mono, monospace" font-weight="900" font-size="140" fill="#1C293C" text-anchor="middle" letter-spacing="-4">04</text>
+
+  <!-- Score section -->
+  <!-- Shadow -->
+  <rect x="66" y="306" width="280" height="80" fill="#1C293C" rx="0"/>
+  <!-- Score box -->
+  <rect x="60" y="300" width="280" height="80" fill="#FDC800" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <text x="200" y="356" font-family="JetBrains Mono, monospace" font-weight="900" font-size="52" fill="#1C293C" text-anchor="middle">7 / 10</text>
+
+  <!-- Motivational text -->
+  <!-- Shadow -->
+  <rect x="46" y="436" width="320" height="70" fill="#1C293C" rx="0"/>
+  <!-- Text box -->
+  <rect x="40" y="430" width="320" height="70" fill="#432DD7" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <text x="200" y="475" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="30" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">I DIDN'T QUIT</text>
+
+  <!-- Streak indicator -->
+  <text x="200" y="560" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#1C293C" text-anchor="middle" letter-spacing="3">STREAK: 4 DAYS 🔥</text>
+
+  <!-- Bottom tagline -->
+  <line x1="60" y1="620" x2="340" y2="620" stroke="#1C293C" stroke-width="2"/>
+  <text x="200" y="660" font-family="Inter, sans-serif" font-weight="700" font-size="16" fill="#1C293C" text-anchor="middle" letter-spacing="4">21 DAYS. NO EXCUSES.</text>
+</svg>

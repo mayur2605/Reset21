@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320">
+  <!-- Badge Collection -->
+
+  <!-- BADGE 1: DAY COMPLETE -->
+  <!-- Shadow -->
+  <rect x="11" y="11" width="230" height="80" fill="#1C293C" rx="0"/>
+  <!-- Badge body -->
+  <rect x="5" y="5" width="230" height="80" fill="#FDC800" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- Checkmark box -->
+  <rect x="15" y="18" width="50" height="50" fill="#1C293C" rx="0"/>
+  <text x="40" y="55" font-family="Inter, sans-serif" font-weight="900" font-size="36" fill="#FDC800" text-anchor="middle">✓</text>
+  <!-- Text -->
+  <text x="80" y="38" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="16" fill="#1C293C" letter-spacing="2">DAY</text>
+  <text x="80" y="64" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="22" fill="#1C293C" letter-spacing="1">COMPLETE</text>
+
+  <!-- BADGE 2: STREAK -->
+  <!-- Shadow -->
+  <rect x="281" y="11" width="220" height="80" fill="#1C293C" rx="0"/>
+  <!-- Badge body -->
+  <rect x="275" y="5" width="220" height="80" fill="#432DD7" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- Fire icon box -->
+  <rect x="285" y="18" width="50" height="50" fill="#FDC800" stroke="#1C293C" stroke-width="3" rx="0"/>
+  <text x="310" y="55" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1C293C" text-anchor="middle">🔥</text>
+  <!-- Text -->
+  <text x="350" y="55" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" letter-spacing="3">STREAK</text>
+
+  <!-- BADGE 3: LEVEL UP -->
+  <!-- Shadow -->
+  <rect x="541" y="11" width="240" height="80" fill="#1C293C" rx="0"/>
+  <!-- Badge body -->
+  <rect x="535" y="5" width="240" height="80" fill="#FBFBF9" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- Arrow box -->
+  <rect x="545" y="18" width="50" height="50" fill="#FDC800" stroke="#1C293C" stroke-width="3" rx="0"/>
+  <text x="570" y="53" font-family="Inter, sans-serif" font-weight="900" font-size="30" fill="#1C293C" text-anchor="middle">⬆</text>
+  <!-- Text -->
+  <text x="610" y="38" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="16" fill="#1C293C" letter-spacing="2">LEVEL</text>
+  <text x="610" y="64" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="28" fill="#1C293C" letter-spacing="1">UP</text>
+
+  <!-- BADGE 4: PERFECT DAY -->
+  <!-- Shadow -->
+  <rect x="11" y="131" width="230" height="80" fill="#1C293C" rx="0"/>
+  <!-- Badge body -->
+  <rect x="5" y="125" width="230" height="80" fill="#FDC800" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- Star box -->
+  <rect x="15" y="138" width="50" height="50" fill="#1C293C" rx="0"/>
+  <text x="40" y="175" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#FDC800" text-anchor="middle">★</text>
+  <!-- Text -->
+  <text x="80" y="158" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="16" fill="#1C293C" letter-spacing="2">PERFECT</text>
+  <text x="80" y="184" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="22" fill="#1C293C" letter-spacing="1">DAY</text>
+
+  <!-- BADGE 5: I DIDN'T QUIT -->
+  <!-- Shadow -->
+  <rect x="281" y="131" width="280" height="80" fill="#1C293C" rx="0"/>
+  <!-- Badge body -->
+  <rect x="275" y="125" width="280" height="80" fill="#FDC800" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- Text -->
+  <text x="415" y="177" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="30" fill="#1C293C" text-anchor="middle" letter-spacing="2">I DIDN'T QUIT</text>
+
+  <!-- BADGE 6: 21 DAYS DONE -->
+  <!-- Shadow -->
+  <rect x="601" y="131" width="180" height="80" fill="#1C293C" rx="0"/>
+  <!-- Badge body -->
+  <rect x="595" y="125" width="180" height="80" fill="#432DD7" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- Text -->
+  <text x="685" y="157" font-family="JetBrains Mono, monospace" font-weight="900" font-size="24" fill="#FDC800" text-anchor="middle" letter-spacing="1">21 DAYS</text>
+  <text x="685" y="184" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">DONE</text>
+
+  <!-- BADGE 7: XP EARNED - smaller -->
+  <!-- Shadow -->
+  <rect x="11" y="251" width="170" height="60" fill="#1C293C" rx="0"/>
+  <!-- Badge body -->
+  <rect x="5" y="245" width="170" height="60" fill="#FBFBF9" stroke="#1C293C" stroke-width="4" rx="0"/>
+  <!-- Text -->
+  <text x="90" y="268" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="14" fill="#432DD7" text-anchor="middle" letter-spacing="2">XP EARNED</text>
+  <text x="90" y="295" font-family="JetBrains Mono, monospace" font-weight="900" font-size="26" fill="#1C293C" text-anchor="middle">+150</text>
+</svg>
