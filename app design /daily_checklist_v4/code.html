@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#0c0f0e",
+                        "on-error": "#ffefec",
+                        "primary": "#715800",
+                        "surface-variant": "#dbdddb",
+                        "secondary": "#4f3de3",
+                        "on-primary-container": "#574300",
+                        "secondary-fixed-dim": "#c2bdff",
+                        "surface": "#f6f6f5",
+                        "primary-container": "#fdc800",
+                        "surface-dim": "#d3d5d3",
+                        "surface-container-low": "#f0f1ef",
+                        "background": "#f6f6f5",
+                        "error-dim": "#b92902",
+                        "tertiary-fixed-dim": "#73f08c",
+                        "surface-container": "#e7e8e6",
+                        "on-primary": "#fff1d6",
+                        "on-tertiary-fixed-variant": "#006c2d",
+                        "on-background": "#2d2f2e",
+                        "primary-fixed-dim": "#ecbb00",
+                        "primary-fixed": "#fdc800",
+                        "on-surface-variant": "#5a5c5b",
+                        "surface-container-high": "#e1e3e1",
+                        "on-tertiary-fixed": "#004c1d",
+                        "on-primary-fixed-variant": "#624c00",
+                        "outline-variant": "#acadac",
+                        "secondary-container": "#d1ccff",
+                        "on-secondary": "#f5f1ff",
+                        "on-primary-fixed": "#403000",
+                        "on-tertiary-container": "#006127",
+                        "surface-bright": "#f6f6f5",
+                        "surface-tint": "#715800",
+                        "on-tertiary": "#cfffcf",
+                        "secondary-fixed": "#d1ccff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#442ed8",
+                        "on-secondary-container": "#3a1fcf",
+                        "tertiary-dim": "#005d25",
+                        "inverse-on-surface": "#9c9d9c",
+                        "error": "#b02500",
+                        "primary-dim": "#634d00",
+                        "on-surface": "#2d2f2e",
+                        "on-secondary-fixed": "#2700ad",
+                        "tertiary-container": "#82ff99",
+                        "tertiary-fixed": "#82ff99",
+                        "error-container": "#f95630",
+                        "secondary-dim": "#432dd7",
+                        "outline": "#767776",
+                        "surface-container-highest": "#dbdddb",
+                        "tertiary": "#006a2c",
+                        "inverse-primary": "#fdc800",
+                        "on-error-container": "#520c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .neobrutal-shadow {
+            box-shadow: 4px 4px 0px 0px #1C293C;
+        }
+        .neobrutal-shadow-sm {
+            box-shadow: 2px 2px 0px 0px #1C293C;
+        }
+        .neobrutal-press:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #1C293C;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-3 bg-[#FBFBF9] border-b-4 border-[#1C293C] shadow-[4px_4px_0px_0px_#1C293C]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1C293C]">menu</span>
+<h1 class="text-2xl font-black tracking-tighter uppercase font-headline text-[#1C293C]">RESET21</h1>
+</div>
+<div class="font-mono text-sm font-bold bg-primary-container text-on-primary-container px-3 py-1 border-2 border-black neobrutal-shadow-sm">
+            LVL 02 WARRIOR • 320 XP
+        </div>
+</header>
+<main class="mt-24 px-4 max-w-2xl mx-auto space-y-6">
+<!-- Near Completion Banner -->
+<section class="bg-[#16A34A] border-4 border-[#1C293C] p-4 neobrutal-shadow relative overflow-hidden">
+<div class="relative z-10 flex flex-col gap-2">
+<p class="font-headline font-black text-white text-xl uppercase tracking-tight">
+                    1 task away from 80% — Complete all → Perfect Day
+                </p>
+<div class="w-full bg-[#1C293C] h-6 border-2 border-black relative">
+<div class="bg-primary-container h-full w-[72%] border-r-2 border-black"></div>
+<span class="absolute inset-0 flex items-center justify-center font-mono text-xs font-bold text-white mix-blend-difference">
+                        72% ACHIEVED
+                    </span>
+</div>
+</div>
+<!-- Decorative texture -->
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-8xl scale-150 rotate-12">trending_up</span>
+</div>
+</section>
+<!-- Gesture Visual Cues -->
+<div class="flex justify-between items-center px-2 py-1">
+<div class="flex items-center gap-2 text-xs font-mono font-bold uppercase text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">keyboard_double_arrow_right</span>
+                Swipe Right: DONE
+            </div>
+<div class="flex items-center gap-2 text-xs font-mono font-bold uppercase text-on-surface-variant">
+                Swipe Left: MISSED
+                <span class="material-symbols-outlined text-sm">keyboard_double_arrow_left</span>
+</div>
+</div>
+<!-- Habit List -->
+<div class="space-y-4">
+<!-- Habit Card: Completed -->
+<div class="group relative bg-surface-container-lowest border-4 border-[#1C293C] p-4 neobrutal-shadow flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary-container border-4 border-[#1C293C] flex items-center justify-center">
+<span class="material-symbols-outlined font-bold text-[#1C293C]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h3 class="font-headline font-black text-lg uppercase leading-tight">Wake up @ 6am</h3>
+<p class="font-mono text-xs text-on-surface-variant">06:00 AM • <span class="text-[#16A34A] font-bold">Strong move 💪</span></p>
+</div>
+</div>
+<div class="font-mono text-xs font-bold bg-surface-container px-2 py-1 border-2 border-[#1C293C]">
+                    +10 XP
+                </div>
+</div>
+<!-- Habit Card: Active -->
+<div class="group relative bg-surface-container-lowest border-4 border-[#1C293C] p-4 neobrutal-shadow flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface border-4 border-[#1C293C] flex items-center justify-center">
+<!-- Empty Checkbox -->
+</div>
+<div>
+<h3 class="font-headline font-black text-lg uppercase leading-tight">Meditation</h3>
+<p class="font-mono text-xs text-on-surface-variant">10 MINS • <span class="text-secondary font-bold italic underline">Needs Action</span></p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">drag_handle</span>
+</div>
+<!-- Habit Card: Failed/Missed -->
+<div class="group relative bg-surface-container border-4 border-[#1C293C] p-4 neobrutal-shadow-sm flex items-center justify-between opacity-75">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-error-container border-4 border-[#1C293C] flex items-center justify-center">
+<span class="material-symbols-outlined font-bold text-white">close</span>
+</div>
+<div>
+<h3 class="font-headline font-black text-lg uppercase leading-tight line-through">Skin Care Routine</h3>
+<p class="font-mono text-xs text-error font-bold italic">Stay disciplined</p>
+</div>
+</div>
+<div class="font-mono text-xs font-bold text-on-surface-variant">
+                    0 XP
+                </div>
+</div>
+<!-- Habit Card: High Progress -->
+<div class="group relative bg-surface-container-lowest border-4 border-[#1C293C] p-4 neobrutal-shadow flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface border-4 border-[#1C293C] flex items-center justify-center"></div>
+<div>
+<h3 class="font-headline font-black text-lg uppercase leading-tight">Complete 10K steps</h3>
+<p class="font-mono text-xs text-on-surface-variant">8,432 / 10,000 STEPS</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="w-16 h-2 bg-surface-container border-2 border-black">
+<div class="bg-secondary h-full w-[84%]"></div>
+</div>
+<span class="text-[10px] font-mono font-bold">84%</span>
+</div>
+</div>
+</div>
+<!-- Competition Card -->
+<section class="bg-secondary-container border-4 border-[#1C293C] p-4 neobrutal-shadow grid grid-cols-2 gap-4">
+<div class="border-r-2 border-[#1C293C] pr-4">
+<p class="font-label text-[10px] uppercase font-bold text-secondary">Community</p>
+<p class="font-headline font-black text-xl leading-none mt-1">TOP USERS SCORED 9/10</p>
+</div>
+<div class="pl-4">
+<p class="font-label text-[10px] uppercase font-bold text-secondary">Your Stand</p>
+<p class="font-headline font-black text-xl leading-none mt-1">YOU RANKED #412</p>
+</div>
+</section>
+<!-- Daily Insights Section -->
+<section class="space-y-4 pb-10">
+<h2 class="font-headline font-black text-xl uppercase italic tracking-tighter">Daily Insights</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-white border-2 border-black p-3 neobrutal-shadow-sm flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary mb-2">bolt</span>
+<div>
+<p class="font-mono text-xl font-black text-[#16A34A]">+2</p>
+<p class="font-label text-[10px] uppercase">Better than yesterday</p>
+</div>
+</div>
+<div class="bg-white border-2 border-black p-3 neobrutal-shadow-sm flex flex-col justify-between">
+<span class="material-symbols-outlined text-error mb-2">warning</span>
+<div>
+<p class="font-mono text-sm font-black uppercase">Meditation</p>
+<p class="font-label text-[10px] uppercase">Most missed</p>
+</div>
+</div>
+<div class="bg-white border-2 border-black p-3 neobrutal-shadow-sm flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary mb-2">workspace_premium</span>
+<div>
+<p class="font-mono text-sm font-black uppercase">Exercise</p>
+<p class="font-label text-[10px] uppercase">Best streak: 12D</p>
+</div>
+</div>
+</div>
+<!-- Remarks mimic -->
+<div class="bg-surface-container-low p-4 border-l-4 border-black italic font-body text-on-surface-variant text-sm">
+                "Not every day is productive, but I didn't quit." — Logged 10:45 PM
+            </div>
+</section>
+</main>
+<!-- Sticky CTA Area -->
+<div class="fixed bottom-20 left-0 w-full px-4 z-40 pointer-events-none">
+<button class="pointer-events-auto w-full max-w-2xl mx-auto bg-primary-fixed border-4 border-black p-4 neobrutal-shadow neobrutal-press flex justify-between items-center group">
+<span class="font-headline font-black text-2xl uppercase tracking-tighter text-black">LOCK DAY &amp; EARN XP</span>
+<span class="material-symbols-outlined text-3xl font-black text-black group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-[#FBFBF9] border-t-4 border-[#1C293C] shadow-[0px_-4px_0px_0px_#1C293C]">
+<div class="flex flex-col items-center justify-center bg-[#FDC800] text-[#1C293C] border-2 border-black shadow-[2px_2px_0px_0px_#000] p-1 scale-95 duration-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-mono text-[10px] uppercase JetBrains Mono">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1C293C] opacity-80 hover:bg-[#432DD7] hover:text-white transition-colors p-1">
+<span class="material-symbols-outlined">event_note</span>
+<span class="font-mono text-[10px] uppercase JetBrains Mono">Plans</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1C293C] opacity-80 hover:bg-[#432DD7] hover:text-white transition-colors p-1">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="font-mono text-[10px] uppercase JetBrains Mono">Progress</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1C293C] opacity-80 hover:bg-[#432DD7] hover:text-white transition-colors p-1">
+<span class="material-symbols-outlined">person</span>
+<span class="font-mono text-[10px] uppercase JetBrains Mono">Profile</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@500;700&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#ecbb00",
+                        "on-secondary-fixed-variant": "#442ed8",
+                        "surface": "#f6f6f5",
+                        "surface-container": "#e7e8e6",
+                        "surface-container-low": "#f0f1ef",
+                        "background": "#f6f6f5",
+                        "on-tertiary-fixed": "#004c1d",
+                        "tertiary": "#006a2c",
+                        "surface-container-high": "#e1e3e1",
+                        "on-background": "#2d2f2e",
+                        "primary-container": "#fdc800",
+                        "surface-bright": "#f6f6f5",
+                        "on-error-container": "#520c00",
+                        "surface-dim": "#d3d5d3",
+                        "tertiary-container": "#82ff99",
+                        "error-dim": "#b92902",
+                        "on-surface": "#2d2f2e",
+                        "secondary-fixed": "#d1ccff",
+                        "on-secondary-container": "#3a1fcf",
+                        "outline-variant": "#acadac",
+                        "on-primary-container": "#574300",
+                        "secondary-fixed-dim": "#c2bdff",
+                        "on-primary": "#fff1d6",
+                        "primary-fixed": "#fdc800",
+                        "tertiary-fixed-dim": "#73f08c",
+                        "on-tertiary-container": "#006127",
+                        "secondary-dim": "#432dd7",
+                        "secondary-container": "#d1ccff",
+                        "secondary": "#4f3de3",
+                        "on-surface-variant": "#5a5c5b",
+                        "on-tertiary": "#cfffcf",
+                        "outline": "#767776",
+                        "error": "#b02500",
+                        "inverse-surface": "#0c0f0e",
+                        "on-primary-fixed": "#403000",
+                        "on-primary-fixed-variant": "#624c00",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdc800",
+                        "on-tertiary-fixed-variant": "#006c2d",
+                        "on-error": "#ffefec",
+                        "surface-container-highest": "#dbdddb",
+                        "on-secondary": "#f5f1ff",
+                        "tertiary-fixed": "#82ff99",
+                        "inverse-on-surface": "#9c9d9c",
+                        "tertiary-dim": "#005d25",
+                        "primary": "#715800",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#2700ad",
+                        "surface-variant": "#dbdddb",
+                        "primary-dim": "#634d00",
+                        "surface-tint": "#715800"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Space Grotesk", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+        }
+        .neobrutal-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .neobrutal-shadow-sm {
+            box-shadow: 3px 3px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .active-press:active {
+            transform: translate(3px, 3px);
+            box-shadow: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-[#FBFBF9] dark:bg-stone-900 border-b-4 border-stone-900 dark:border-stone-50 shadow-[4px_4px_0px_0px_rgba(28,41,60,1)] flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 border-2 border-stone-900 overflow-hidden">
+<img alt="user profile picture" class="w-full h-full object-cover" data-alt="close-up portrait of a determined young man with a focused expression in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1TG0Ii7dimRXJnFuczXzc_T_WxT6NMUs-ZllaMR5hRSZsjLL8uwvN70Qoh_zpaR9LfKaAg0J7WnMVTiG8YK-6ztJhz8PJBC1u4OPjBXZT5TmIPlEPGu7tOol7M-ULXJWkDip0an-eR7wtH3RG7NQedyclsxjELwseazIuqQ6OQTDZWGK-6DnYcuxMPFegC9lqTvsHBLFZMedag7DOofEjnqLpuK-uISYWPokZ169aaQMVZgzaiuJ8B9jrUse96ruiONuCTQ3kieg"/>
+</div>
+<h1 class="text-2xl font-black text-stone-900 dark:text-stone-50 font-sans tracking-tighter uppercase">DAY 04</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1 bg-primary-container px-3 py-1 border-2 border-stone-900 neobrutal-shadow-sm">
+<span class="material-symbols-outlined text-stone-900 text-xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-mono font-bold text-stone-900">4</span>
+</div>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-4 pt-8">
+<!-- Hero Progress Section -->
+<section class="mb-10">
+<div class="flex justify-between items-end mb-4">
+<div>
+<h2 class="text-5xl font-black tracking-tighter leading-none mb-2">DAY 4 <span class="text-xl font-label text-outline uppercase tracking-normal">of 21 Reset!</span></h2>
+</div>
+<div class="text-right">
+<span class="font-mono text-2xl font-bold bg-secondary-container border-2 border-stone-900 px-3 py-1 neobrutal-shadow-sm">SCORE 07/10</span>
+</div>
+</div>
+<div class="w-full h-8 border-4 border-stone-900 bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary border-r-4 border-stone-900" style="width: 70%;"></div>
+</div>
+</section>
+<!-- Quote Card -->
+<section class="mb-10">
+<div class="bg-secondary p-6 border-4 border-stone-900 neobrutal-shadow text-on-secondary relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-mono text-xs uppercase tracking-widest opacity-80 block mb-2">Daily Anchor</span>
+<p class="text-3xl font-black italic leading-tight tracking-tight">"Not every day is productive, but I didn't quit."</p>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">format_quote</span>
+</div>
+</div>
+</section>
+<!-- Checklist Grid -->
+<section class="space-y-4">
+<h3 class="font-label font-bold text-lg uppercase tracking-wider mb-4 flex items-center gap-2">
+<span class="w-2 h-6 bg-primary-container inline-block border border-stone-900"></span>
+                Discipline Log
+            </h3>
+<!-- Habit Items -->
+<div class="grid grid-cols-1 gap-4">
+<!-- Wake up @ 6am -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">Wake up @ 6am</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="bg-error-container text-on-error-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">MISSED</span>
+<span class="font-mono text-xs text-outline">X 7AM</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-error font-bold">close</span>
+</div>
+</div>
+<!-- Meditation -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">Meditation</span>
+<div class="mt-1">
+<span class="bg-error-container text-on-error-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">SKIPPED</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-error font-bold">close</span>
+</div>
+</div>
+<!-- Exercise -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">Exercise</span>
+<div class="mt-1">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">DONE</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900 font-bold">check</span>
+</div>
+</div>
+<!-- Skin Care Routine -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">Skin Care Routine</span>
+<div class="mt-1">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">DONE</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900 font-bold">check</span>
+</div>
+</div>
+<!-- Complete 10k steps -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">Complete 10k steps</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="bg-error-container text-on-error-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">PARTIAL</span>
+<span class="font-mono text-xs text-outline">X 5,635</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-error font-bold">close</span>
+</div>
+</div>
+<!-- 3L Water -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">3L Water</span>
+<div class="mt-1 text-outline font-mono text-xs">Target: 3.0L</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900 font-bold">check</span>
+</div>
+</div>
+<!-- No Junk & Sugar -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">No Junk &amp; Sugar</span>
+<div class="mt-1">
+<span class="bg-error-container text-on-error-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">FAILED</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-error font-bold">close</span>
+</div>
+</div>
+<!-- 1 hr Study -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">1 hr Study</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">BONUS</span>
+<span class="font-mono text-xs text-on-tertiary-fixed-variant">2 HR COMPLETED</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900 font-bold">check</span>
+</div>
+</div>
+<!-- Read book -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">Read book</span>
+<div class="mt-1">
+<span class="bg-error-container text-on-error-container text-[10px] font-mono font-bold px-2 py-0.5 border border-stone-900">NOT STARTED</span>
+</div>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-error font-bold">close</span>
+</div>
+</div>
+<!-- Plan Next day -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutal-shadow flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xl font-bold tracking-tight">Plan Next day</span>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900 font-bold">check</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Action -->
+<section class="mt-12 mb-8">
+<button class="w-full bg-primary-container text-stone-900 font-black text-2xl py-6 border-4 border-stone-900 neobrutal-shadow active-press uppercase tracking-tight transition-all">
+                FINISH DAY
+            </button>
+<p class="text-center font-mono text-xs text-outline mt-4 uppercase">Entries lock at 12:00 AM</p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-2 bg-[#FBFBF9] dark:bg-stone-900 border-t-4 border-stone-900 dark:border-stone-50">
+<button class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="font-mono text-[10px] font-bold uppercase">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-[#FDC800] text-stone-900 border-2 border-stone-900 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">assignment</span>
+<span class="font-mono text-[10px] font-bold uppercase">Plans</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">leaderboard</span>
+<span class="font-mono text-[10px] font-bold uppercase">Progress</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="font-mono text-[10px] font-bold uppercase">Profile</span>
+</button>
+</nav>
+</body></html>

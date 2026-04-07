@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reset21 - Discipline Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@500;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#ecbb00",
+                        "on-secondary-fixed-variant": "#442ed8",
+                        "surface": "#f6f6f5",
+                        "surface-container": "#e7e8e6",
+                        "surface-container-low": "#f0f1ef",
+                        "background": "#f6f6f5",
+                        "on-tertiary-fixed": "#004c1d",
+                        "tertiary": "#006a2c",
+                        "surface-container-high": "#e1e3e1",
+                        "on-background": "#2d2f2e",
+                        "primary-container": "#fdc800",
+                        "surface-bright": "#f6f6f5",
+                        "on-error-container": "#520c00",
+                        "surface-dim": "#d3d5d3",
+                        "tertiary-container": "#82ff99",
+                        "error-dim": "#b92902",
+                        "on-surface": "#2d2f2e",
+                        "secondary-fixed": "#d1ccff",
+                        "on-secondary-container": "#3a1fcf",
+                        "outline-variant": "#acadac",
+                        "on-primary-container": "#574300",
+                        "secondary-fixed-dim": "#c2bdff",
+                        "on-primary": "#fff1d6",
+                        "primary-fixed": "#fdc800",
+                        "tertiary-fixed-dim": "#73f08c",
+                        "on-tertiary-container": "#006127",
+                        "secondary-dim": "#432dd7",
+                        "secondary-container": "#d1ccff",
+                        "secondary": "#4f3de3",
+                        "on-surface-variant": "#5a5c5b",
+                        "on-tertiary": "#cfffcf",
+                        "outline": "#767776",
+                        "error": "#b02500",
+                        "inverse-surface": "#0c0f0e",
+                        "on-primary-fixed": "#403000",
+                        "on-primary-fixed-variant": "#624c00",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdc800",
+                        "on-tertiary-fixed-variant": "#006c2d",
+                        "on-error": "#ffefec",
+                        "surface-container-highest": "#dbdddb",
+                        "on-secondary": "#f5f1ff",
+                        "tertiary-fixed": "#82ff99",
+                        "inverse-on-surface": "#9c9d9c",
+                        "tertiary-dim": "#005d25",
+                        "primary": "#715800",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#2700ad",
+                        "surface-variant": "#dbdddb",
+                        "primary-dim": "#634d00",
+                        "surface-tint": "#715800"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neobrutal-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .neobrutal-shadow-lg {
+            box-shadow: 8px 8px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .neobrutal-press:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px rgba(28, 41, 60, 1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#FBFBF9] dark:bg-stone-900 border-b-4 border-stone-900 dark:border-stone-50 shadow-[4px_4px_0px_0px_rgba(28,41,60,1)] sticky top-0 z-40">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 border-2 border-stone-900 overflow-hidden">
+<img alt="user profile picture" class="w-full h-full object-cover" data-alt="close-up portrait of a determined young professional athlete, high contrast studio lighting, gritty texture, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzn0OzZqZ6Ma59hs3SEd1vCUi-P5yOISN77--17nGsS1t-NjV1u_Mjzu4wEuLaykrcylbInLjOszPVz2DNtqH-M1flTxAoN5feM-1mT-jrubebOiPvO7r-WldCCcxe-ToRmJPVJdDK5L4vDIQFsDPBnhGYQT_gEq2-yehHX8AWLz7mGtjdx99p-fNK4k055SCqYaeYlamXKf_6FgeZoYd_06Ywzt74h4jABtO0vQCrVq7rHTpE2jqw0hpxDs4QtV8ilqb8eKW6nJQ"/>
+</div>
+<h1 class="text-2xl font-black text-stone-900 dark:text-stone-50 font-headline tracking-tighter uppercase">DAY 04</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 bg-primary-container px-3 py-1 border-2 border-stone-900 neobrutal-shadow">
+<span class="material-symbols-outlined text-stone-900" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-mono font-bold text-stone-900">5 DAYS</span>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Today's Overview (Main Focus) -->
+<section class="col-span-12 lg:col-span-8">
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-8 neobrutal-shadow-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary-dim text-on-secondary px-6 py-2 font-mono border-l-4 border-b-4 border-stone-900">
+                    PHASE 01
+                </div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div>
+<p class="font-label text-stone-500 uppercase tracking-widest text-sm mb-1">Today's Discipline</p>
+<h2 class="text-5xl font-black font-headline tracking-tighter mb-4">SCORE: 7/10</h2>
+<div class="flex gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 border-2 border-stone-900 font-mono text-xs font-bold uppercase">On Track</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 border-2 border-stone-900 font-mono text-xs font-bold uppercase">+2 vs Yesterday</span>
+</div>
+</div>
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-high" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-width="16"></circle>
+<circle class="text-primary-container" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-dasharray="502.6" stroke-dashoffset="150.8" stroke-width="16"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-mono text-4xl font-black">70%</span>
+<span class="font-label text-[10px] font-bold uppercase">Complete</span>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<div class="flex justify-between mb-2">
+<span class="font-mono text-sm font-bold">DAILY PROGRESS</span>
+<span class="font-mono text-sm">DAY 4 OF 21</span>
+</div>
+<div class="w-full h-8 bg-surface-container border-4 border-stone-900 flex">
+<div class="h-full bg-secondary-dim border-r-4 border-stone-900" style="width: 19%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Actions -->
+<aside class="col-span-12 lg:col-span-4 flex flex-col gap-4">
+<button class="w-full bg-primary-container border-4 border-stone-900 p-4 flex items-center justify-between neobrutal-shadow neobrutal-press group">
+<span class="font-headline font-black text-xl uppercase italic">Log Habit</span>
+<span class="material-symbols-outlined text-3xl group-hover:translate-x-1 transition-transform">add_box</span>
+</button>
+<button class="w-full bg-surface-container-lowest border-4 border-stone-900 p-4 flex items-center justify-between neobrutal-shadow neobrutal-press group">
+<span class="font-headline font-black text-xl uppercase italic">View Stats</span>
+<span class="material-symbols-outlined text-3xl group-hover:translate-x-1 transition-transform">monitoring</span>
+</button>
+<button class="w-full bg-surface-container-lowest border-4 border-stone-900 p-4 flex items-center justify-between neobrutal-shadow neobrutal-press group">
+<span class="font-headline font-black text-xl uppercase italic">Share Progress</span>
+<span class="material-symbols-outlined text-3xl group-hover:translate-x-1 transition-transform">ios_share</span>
+</button>
+</aside>
+<!-- Weekly Progress Graph -->
+<section class="col-span-12 md:col-span-7">
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-6 neobrutal-shadow h-full">
+<div class="flex justify-between items-center mb-8">
+<h3 class="font-headline font-black text-2xl uppercase">Weekly Velocity</h3>
+<span class="font-mono text-sm text-stone-500 underline decoration-2 decoration-primary-container underline-offset-4">Last 7 Days</span>
+</div>
+<div class="flex items-end justify-between h-48 gap-2 px-2">
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="w-full bg-surface-container-high border-x-4 border-t-4 border-stone-900" style="height: 60%"></div>
+<span class="font-mono text-xs font-bold">M</span>
+</div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="w-full bg-surface-container-high border-x-4 border-t-4 border-stone-900" style="height: 85%"></div>
+<span class="font-mono text-xs font-bold">T</span>
+</div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="w-full bg-surface-container-high border-x-4 border-t-4 border-stone-900" style="height: 40%"></div>
+<span class="font-mono text-xs font-bold">W</span>
+</div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="w-full bg-primary-container border-x-4 border-t-4 border-stone-900 relative" style="height: 70%">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-stone-900 text-white text-[10px] px-1 font-mono">NOW</div>
+</div>
+<span class="font-mono text-xs font-bold">T</span>
+</div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="w-full bg-surface-container border-x-4 border-t-4 border-stone-900 opacity-30" style="height: 10%"></div>
+<span class="font-mono text-xs font-bold text-stone-400">F</span>
+</div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="w-full bg-surface-container border-x-4 border-t-4 border-stone-900 opacity-30" style="height: 10%"></div>
+<span class="font-mono text-xs font-bold text-stone-400">S</span>
+</div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="w-full bg-surface-container border-x-4 border-t-4 border-stone-900 opacity-30" style="height: 10%"></div>
+<span class="font-mono text-xs font-bold text-stone-400">S</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Plan Card -->
+<section class="col-span-12 md:col-span-5">
+<div class="bg-secondary-dim border-4 border-stone-900 p-6 neobrutal-shadow text-on-secondary h-full relative overflow-hidden">
+<!-- Abstract Background Pattern -->
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px] rotate-12">bolt</span>
+</div>
+<div class="relative z-10">
+<span class="bg-on-secondary text-secondary-dim px-3 py-1 font-mono text-[10px] font-black uppercase mb-4 inline-block">Active Plan</span>
+<h3 class="font-headline font-black text-3xl mb-1 uppercase tracking-tight">Productivity Reset</h3>
+<p class="font-label text-sm opacity-80 mb-6 uppercase">Mastering Deep Focus</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-stone-900/20 border-2 border-on-secondary/30 p-3">
+<p class="font-mono text-xs opacity-70">REMAINING</p>
+<p class="font-mono text-2xl font-bold">17 DAYS</p>
+</div>
+<div class="bg-stone-900/20 border-2 border-on-secondary/30 p-3">
+<p class="font-mono text-xs opacity-70">ADHERENCE</p>
+<p class="font-mono text-2xl font-bold">92%</p>
+</div>
+</div>
+<button class="w-full bg-on-secondary text-secondary-dim font-headline font-bold py-3 border-2 border-stone-900 neobrutal-shadow neobrutal-press uppercase tracking-tighter">
+                        Manage Plan
+                    </button>
+</div>
+</div>
+</section>
+<!-- Habits Bento Grid (Translation from "Physical Planner") -->
+<section class="col-span-12">
+<div class="flex justify-between items-end mb-6">
+<div>
+<h3 class="font-headline font-black text-3xl uppercase tracking-tighter">Core Discipline</h3>
+<p class="font-label text-stone-500 text-sm">DAILY REPETITIONS FOR DAY 04</p>
+</div>
+<div class="bg-stone-900 text-white px-4 py-1 font-mono text-xs uppercase">
+                    Remarks: 05/10 Complete
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Habit: Wake up -->
+<div class="bg-surface-container-lowest border-2 border-stone-900 p-4 neobrutal-shadow flex items-center justify-between">
+<div>
+<h4 class="font-headline font-bold">Wake up @ 6am</h4>
+<span class="font-mono text-xs text-stone-500">06:00 AM</span>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 flex items-center justify-center bg-primary-container">
+<span class="material-symbols-outlined font-bold">check</span>
+</div>
+</div>
+<!-- Habit: Meditation -->
+<div class="bg-surface-container-lowest border-2 border-stone-900 p-4 neobrutal-shadow flex items-center justify-between">
+<div>
+<h4 class="font-headline font-bold">Meditation</h4>
+<span class="font-mono text-xs text-stone-500">15 MIN</span>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 flex items-center justify-center bg-primary-container">
+<span class="material-symbols-outlined font-bold">check</span>
+</div>
+</div>
+<!-- Habit: 10K Steps -->
+<div class="bg-surface-container-lowest border-2 border-stone-900 p-4 neobrutal-shadow flex items-center justify-between">
+<div>
+<h4 class="font-headline font-bold">Complete 10K steps</h4>
+<span class="font-mono text-xs text-stone-500">5,635 STEPS</span>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 flex items-center justify-center bg-surface-container"></div>
+</div>
+<!-- Habit: 3L Water -->
+<div class="bg-surface-container-lowest border-2 border-stone-900 p-4 neobrutal-shadow flex items-center justify-between">
+<div>
+<h4 class="font-headline font-bold">3L Water</h4>
+<span class="font-mono text-xs text-stone-500">2.1L CONSUMED</span>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 flex items-center justify-center bg-surface-container"></div>
+</div>
+<!-- Habit: No Junk -->
+<div class="bg-surface-container-lowest border-2 border-stone-900 p-4 neobrutal-shadow flex items-center justify-between border-l-8 border-l-error">
+<div>
+<h4 class="font-headline font-bold">No Junk &amp; Sugar</h4>
+<span class="font-mono text-xs text-error font-bold uppercase">Critical</span>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 flex items-center justify-center bg-primary-container">
+<span class="material-symbols-outlined font-bold">close</span>
+</div>
+</div>
+<!-- Habit: Study -->
+<div class="bg-surface-container-lowest border-2 border-stone-900 p-4 neobrutal-shadow flex items-center justify-between">
+<div>
+<h4 class="font-headline font-bold">1 hr Study</h4>
+<span class="font-mono text-xs text-stone-500">0/60 MIN</span>
+</div>
+<div class="w-10 h-10 border-4 border-stone-900 flex items-center justify-center bg-surface-container"></div>
+</div>
+</div>
+</section>
+<!-- Remarks Section -->
+<section class="col-span-12">
+<div class="bg-[#f0f0ee] border-t-4 border-stone-900 p-6 italic text-stone-700 font-body">
+<p class="text-lg">"Not every day is productive, but I didn't quit."</p>
+<p class="font-mono text-xs mt-2 opacity-50 uppercase">— DAILY JOURNAL ENTRY</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-2 bg-surface border-t-4 border-stone-900 dark:border-stone-50">
+<a class="flex flex-col items-center justify-center bg-[#FDC800] text-stone-900 border-2 border-stone-900 px-4 py-1 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-mono text-[10px] font-bold uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-mono text-[10px] font-bold uppercase">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="font-mono text-[10px] font-bold uppercase">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-mono text-[10px] font-bold uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

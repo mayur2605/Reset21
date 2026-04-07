@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@700;800&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#82ff99",
+                    "primary-dim": "#634d00",
+                    "on-surface-variant": "#5a5c5b",
+                    "surface-tint": "#715800",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#767776",
+                    "on-tertiary-fixed": "#004c1d",
+                    "on-secondary-container": "#3a1fcf",
+                    "on-surface": "#2d2f2e",
+                    "error-dim": "#b92902",
+                    "surface-variant": "#dbdddb",
+                    "on-primary-fixed": "#403000",
+                    "inverse-primary": "#fdc800",
+                    "on-primary": "#fff1d6",
+                    "tertiary-container": "#82ff99",
+                    "error-container": "#f95630",
+                    "on-error-container": "#520c00",
+                    "secondary-fixed-dim": "#c2bdff",
+                    "on-secondary": "#f5f1ff",
+                    "primary": "#715800",
+                    "secondary": "#4f3de3",
+                    "on-tertiary-container": "#006127",
+                    "error": "#b02500",
+                    "on-secondary-fixed": "#2700ad",
+                    "background": "#f6f6f5",
+                    "secondary-container": "#d1ccff",
+                    "on-primary-container": "#574300",
+                    "surface-dim": "#d3d5d3",
+                    "primary-fixed-dim": "#ecbb00",
+                    "inverse-surface": "#0c0f0e",
+                    "tertiary": "#006a2c",
+                    "primary-container": "#fdc800",
+                    "surface": "#f6f6f5",
+                    "inverse-on-surface": "#9c9d9c",
+                    "surface-container-high": "#e1e3e1",
+                    "surface-container-low": "#f0f1ef",
+                    "on-background": "#2d2f2e",
+                    "tertiary-dim": "#005d25",
+                    "primary-fixed": "#fdc800",
+                    "on-tertiary-fixed-variant": "#006c2d",
+                    "secondary-fixed": "#d1ccff",
+                    "on-tertiary": "#cfffcf",
+                    "surface-container": "#e7e8e6",
+                    "tertiary-fixed-dim": "#73f08c",
+                    "secondary-dim": "#432dd7",
+                    "surface-bright": "#f6f6f5",
+                    "outline-variant": "#acadac",
+                    "on-secondary-fixed-variant": "#442ed8",
+                    "on-primary-fixed-variant": "#624c00",
+                    "on-error": "#ffefec",
+                    "surface-container-highest": "#dbdddb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "4px",
+                    "xl": "8px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Space Grotesk", "sans-serif"],
+                    "mono": ["JetBrains Mono", "monospace"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neobrutal-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .neobrutal-shadow-sm {
+            box-shadow: 4px 4px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .kinetic-press:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px rgba(28, 41, 60, 1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background overflow-hidden">
+<!-- Top Navigation Anchor (Shared Component Mapping) -->
+<header class="bg-[#FBFBF9] dark:bg-stone-900 border-b-4 border-stone-900 dark:border-stone-50 shadow-[4px_4px_0px_0px_rgba(28,41,60,1)] sticky top-0 z-50 flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 border-2 border-stone-900 overflow-hidden">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="portrait of a focused young man with athletic build and a small digital warrior badge icon overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFlu860io6qXZtTPyEJFos2-hTd8wPCEbll93M8ENKw6jtQyF1A9QBNbaVcKFUFAjTNHBqi8CSgG9i_3fxs-Efyl9PGBTQeCJe-PNKF-1ly1kDxIk0OIsXrvHXPqVBtlQHjTLxmLdcegPhngQw0lCdblXJCpnZZQWN68t5mQfZKq0mTbkGMGKBTdGhGijLWvblE67ZLMFaV7eEqKf7z8-xSGR9vEfFt7tK_Dd1u1s8C6v6ZO9KAstGhKDLXYLQe2WzTs9XIJHCAx4"/>
+</div>
+<h1 class="font-bold tracking-tighter uppercase font-sans text-stone-900 dark:text-stone-50 text-2xl">DAY 04</h1>
+</div>
+<div class="flex items-center">
+<span class="font-mono text-xl font-black text-stone-900 dark:text-stone-50">1,250 XP</span>
+</div>
+</header>
+<main class="min-h-[calc(100vh-152px)] flex items-center justify-center p-4 relative overflow-hidden">
+<!-- Background Geometric Success Visuals -->
+<div class="absolute inset-0 pointer-events-none z-0">
+<div class="absolute top-10 left-10 w-24 h-24 bg-tertiary-fixed border-4 border-stone-900 rotate-12 opacity-40"></div>
+<div class="absolute bottom-20 right-10 w-32 h-32 bg-secondary border-4 border-stone-900 -rotate-12 opacity-30"></div>
+<div class="absolute top-1/2 left-[10%] w-12 h-12 bg-primary-container border-4 border-stone-900 rotate-45 opacity-50"></div>
+<div class="absolute top-20 right-1/4 w-8 h-8 bg-error border-2 border-stone-900 rounded-full opacity-40"></div>
+</div>
+<!-- End of Day Reward Card -->
+<div class="max-w-md w-full bg-surface-container-lowest border-[4px] border-stone-900 neobrutal-shadow p-8 relative z-10 flex flex-col items-center text-center">
+<!-- Progress Tag -->
+<div class="font-label text-xs font-bold uppercase tracking-widest bg-stone-900 text-white px-4 py-1 mb-6">
+                Day Progress: Day 04 of 21
+            </div>
+<!-- Score Visual -->
+<div class="mb-2">
+<span class="font-mono text-8xl md:text-9xl font-extrabold text-stone-900 tracking-tighter">7/10</span>
+</div>
+<div class="h-4 w-full bg-surface-container border-2 border-stone-900 mb-8 overflow-hidden">
+<div class="h-full bg-tertiary w-[70%] border-r-2 border-stone-900"></div>
+</div>
+<!-- Message -->
+<h2 class="font-headline font-black text-4xl mb-4 leading-none text-stone-900 uppercase">You didn’t quit.</h2>
+<!-- Badge Cluster -->
+<div class="flex flex-wrap justify-center gap-3 mb-10">
+<div class="bg-primary-container border-2 border-stone-900 neobrutal-shadow-sm px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-stone-900 font-bold" data-weight="fill">local_fire_department</span>
+<span class="font-mono font-bold text-stone-900">🔥 5 DAY STREAK</span>
+</div>
+<div class="bg-secondary text-white border-2 border-stone-900 neobrutal-shadow-sm px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-white font-bold">add_circle</span>
+<span class="font-mono font-bold uppercase">+70 XP EARNED</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full space-y-4">
+<button class="w-full kinetic-press bg-primary-container border-[3px] border-stone-900 neobrutal-shadow-sm py-4 font-label font-bold text-lg uppercase tracking-tight text-stone-900">
+                    SHARE PROGRESS
+                </button>
+<button class="w-full kinetic-press bg-white border-[3px] border-stone-900 py-4 font-label font-bold text-lg uppercase tracking-tight text-stone-900">
+                    CONTINUE TOMORROW
+                </button>
+</div>
+<!-- Signature Note Translation -->
+<div class="mt-8 pt-6 border-t-2 border-stone-200 w-full italic font-body text-stone-500 text-sm">
+                "Not every day is productive, but I didn't quit."
+            </div>
+</div>
+</main>
+<!-- Bottom Navigation Shell (Shared Component Mapping) -->
+<!-- Prohibited on transactional screen, but provided for layout context if needed. 
+         Normally suppressed per "Destination Rule", but including placeholder per "Kinetic Archive" aesthetic. -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-2 bg-[#FBFBF9] dark:bg-stone-900 border-t-4 border-stone-900 dark:border-stone-50">
+<div class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-mono text-[10px] font-bold uppercase">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-mono text-[10px] font-bold uppercase">Plans</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#FDC800] text-stone-900 border-2 border-stone-900 px-4 py-1 shadow-[2px_2px_0px_0px_rgba(28,41,60,1)]">
+<span class="material-symbols-outlined" data-icon="leaderboard" style="font-variation-settings: 'FILL' 1;">leaderboard</span>
+<span class="font-mono text-[10px] font-bold uppercase">Progress</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-mono text-[10px] font-bold uppercase">Profile</span>
+</div>
+</nav>
+</body></html>

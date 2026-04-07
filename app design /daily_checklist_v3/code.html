@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RESET21 - Daily Checklist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e1e3e1",
+                    "on-surface": "#2d2f2e",
+                    "on-primary": "#fff1d6",
+                    "on-secondary": "#f5f1ff",
+                    "inverse-surface": "#0c0f0e",
+                    "primary-fixed": "#fdc800",
+                    "tertiary-fixed": "#82ff99",
+                    "tertiary-container": "#82ff99",
+                    "on-primary-container": "#574300",
+                    "surface-container-low": "#f0f1ef",
+                    "surface-variant": "#dbdddb",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#d1ccff",
+                    "error-dim": "#b92902",
+                    "on-primary-fixed": "#403000",
+                    "inverse-on-surface": "#9c9d9c",
+                    "outline": "#767776",
+                    "tertiary-dim": "#005d25",
+                    "tertiary-fixed-dim": "#73f08c",
+                    "primary-dim": "#634d00",
+                    "on-tertiary-container": "#006127",
+                    "surface-bright": "#f6f6f5",
+                    "secondary": "#4f3de3",
+                    "primary-fixed-dim": "#ecbb00",
+                    "on-surface-variant": "#5a5c5b",
+                    "outline-variant": "#acadac",
+                    "error": "#b02500",
+                    "secondary-fixed-dim": "#c2bdff",
+                    "on-error": "#ffefec",
+                    "on-secondary-container": "#3a1fcf",
+                    "on-error-container": "#520c00",
+                    "on-primary-fixed-variant": "#624c00",
+                    "secondary-container": "#d1ccff",
+                    "secondary-dim": "#432dd7",
+                    "primary": "#715800",
+                    "on-secondary-fixed-variant": "#442ed8",
+                    "tertiary": "#006a2c",
+                    "on-secondary-fixed": "#2700ad",
+                    "on-tertiary": "#cfffcf",
+                    "surface-container-highest": "#dbdddb",
+                    "on-background": "#2d2f2e",
+                    "surface": "#f6f6f5",
+                    "inverse-primary": "#fdc800",
+                    "on-tertiary-fixed": "#004c1d",
+                    "error-container": "#f95630",
+                    "on-tertiary-fixed-variant": "#006c2d",
+                    "background": "#f6f6f5",
+                    "primary-container": "#fdc800",
+                    "surface-dim": "#d3d5d3",
+                    "surface-container": "#e7e8e6",
+                    "surface-tint": "#715800"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "4px",
+                    "xl": "8px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"],
+                    "mono": ["JetBrains Mono"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neobrutalist-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .neobrutalist-shadow-active {
+            box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+            transform: translate(2px, 2px);
+        }
+        .kinetic-button:active {
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+            transform: translate(4px, 4px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#FBFBF9] dark:bg-stone-900 w-full top-0 z-50 border-b-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center px-4 py-3 sticky">
+<div class="flex items-center gap-2">
+<span class="text-xl font-black italic tracking-tighter text-black dark:text-white">RESET21</span>
+<div class="bg-black text-white px-2 py-0.5 text-[10px] font-bold tracking-widest font-label uppercase">LVL 02 WARRIOR</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex flex-col items-end">
+<span class="font-mono text-sm font-bold text-black leading-none">1,250 XP</span>
+<div class="w-16 h-1.5 bg-surface-container mt-1 border border-black overflow-hidden">
+<div class="h-full bg-[#FDC800] w-3/4"></div>
+</div>
+</div>
+<button class="w-10 h-10 border-2 border-black flex items-center justify-center hover:bg-[#FDC800] transition-colors">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-4 py-8 space-y-6">
+<!-- Near Completion Motivation Banner -->
+<section class="bg-tertiary-container border-4 border-black p-4 neobrutalist-shadow flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-black scale-125" data-icon="bolt" data-weight="fill" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="font-headline font-black text-sm tracking-tight text-black">1 TASK AWAY FROM 80% — COMPLETE ALL → PERFECT DAY</h2>
+</div>
+<span class="material-symbols-outlined text-black" data-icon="arrow_forward">arrow_forward</span>
+</section>
+<!-- Date Header -->
+<header class="flex justify-between items-baseline py-4 border-b-2 border-black/10">
+<div>
+<h1 class="text-4xl font-black tracking-tighter font-headline">DAY 04</h1>
+<p class="font-mono text-xs uppercase opacity-70 tracking-widest">TUESDAY, OCT 24</p>
+</div>
+<div class="text-right">
+<p class="font-label font-bold text-xs uppercase tracking-widest text-secondary-dim">Current Focus</p>
+<p class="font-headline font-bold text-lg">Consistency</p>
+</div>
+</header>
+<!-- Checklist Section -->
+<section class="space-y-4">
+<!-- Item 1: DONE -->
+<div class="bg-surface-container-lowest border-4 border-black p-4 neobrutalist-shadow relative group">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-tertiary">Strong move 💪</span>
+<span class="material-symbols-outlined text-tertiary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 border-2 border-black bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white text-lg" data-icon="alarm">alarm</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl line-through decoration-black decoration-4 opacity-40">Wake up @ 6am</h3>
+<p class="font-mono text-xs text-black/60">Logged at 05:58 AM</p>
+</div>
+<div class="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+<span class="text-[10px] font-bold font-label uppercase">Undo</span>
+<span class="material-symbols-outlined scale-75" data-icon="undo">undo</span>
+</div>
+</div>
+</div>
+<!-- Item 2: MISSED -->
+<div class="bg-surface-container border-4 border-black p-4 opacity-80 border-dashed relative">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-error">You slipped</span>
+<span class="material-symbols-outlined text-error" data-icon="cancel">cancel</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 border-2 border-black bg-stone-300 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-black text-lg" data-icon="self_improvement">self_improvement</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl opacity-60">Meditation</h3>
+<p class="font-mono text-xs text-error font-bold">MISS DETECTED</p>
+</div>
+<button class="bg-black text-white px-3 py-1 font-label text-[10px] font-bold uppercase tracking-widest">APPEAL</button>
+</div>
+</div>
+<!-- Item 3: IN PROGRESS -->
+<div class="bg-surface-container-lowest border-4 border-black p-4 neobrutalist-shadow-active border-primary-container relative translate-x-[2px] translate-y-[2px] shadow-none">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-secondary">In progress</span>
+<span class="material-symbols-outlined text-secondary" data-icon="keyboard_double_arrow_right">keyboard_double_arrow_right</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 border-2 border-black bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-black text-lg" data-icon="directions_run">directions_run</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl">Complete 10k steps</h3>
+<div class="mt-2 flex items-center gap-3">
+<div class="flex-1 h-3 border-2 border-black bg-white overflow-hidden">
+<div class="h-full bg-secondary w-[56%]"></div>
+</div>
+<span class="font-mono text-sm font-bold text-secondary">5,635 / 10,000</span>
+</div>
+</div>
+</div>
+<!-- Gesture Cue -->
+<div class="absolute -right-2 top-1/2 -translate-y-1/2 bg-black text-white p-1 flex flex-col items-center">
+<span class="material-symbols-outlined text-xs" data-icon="arrow_back">arrow_back</span>
+<span class="text-[8px] font-black [writing-mode:vertical-lr] uppercase py-1">Swipe to mark</span>
+</div>
+</div>
+<!-- Item 4: EMPTY/PENDING -->
+<div class="bg-surface-container-lowest border-4 border-black p-4 neobrutalist-shadow relative hover:bg-primary-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 border-2 border-black bg-white group-hover:bg-black group-hover:text-white transition-colors flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="book_5">book_5</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl">Read 20 Pages</h3>
+<p class="font-mono text-xs opacity-50">Not started</p>
+</div>
+<div class="w-8 h-8 border-2 border-black flex items-center justify-center group-hover:bg-white">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Daily Insight Section -->
+<section class="mt-12 space-y-4">
+<h4 class="font-label font-black text-xs uppercase tracking-[0.3em]">Performance Analytics</h4>
+<div class="bg-black text-white p-6 neobrutalist-shadow">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-1">
+<p class="text-[10px] font-label font-bold text-primary opacity-80 uppercase tracking-widest">Trajectory</p>
+<p class="text-3xl font-headline font-black">+2</p>
+<p class="font-mono text-[10px] opacity-60">BETTER THAN YESTERDAY</p>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-label font-bold text-error opacity-80 uppercase tracking-widest">The Wall</p>
+<p class="text-lg font-headline font-black truncate">Meditation</p>
+<p class="font-mono text-[10px] opacity-60">MOST MISSED (3 DAYS)</p>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-white/20 flex justify-between items-center">
+<div>
+<p class="text-[10px] font-label font-bold text-tertiary uppercase tracking-widest">MVP Habit</p>
+<p class="font-headline font-bold">Exercise</p>
+</div>
+<div class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center bg-tertiary">
+<span class="material-symbols-outlined text-white" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Remarks mimic -->
+<section class="py-12 italic text-on-surface opacity-60 text-center font-body px-8">
+            "Not every day is productive, but I didn't quit."
+        </section>
+</main>
+<!-- Sticky Finish Day Button -->
+<div class="fixed bottom-24 left-0 w-full px-4 z-40">
+<div class="max-w-2xl mx-auto">
+<button class="kinetic-button w-full bg-[#FDC800] border-4 border-black p-4 neobrutalist-shadow flex flex-col items-center justify-center group">
+<span class="font-headline font-black text-2xl tracking-tighter text-black uppercase">FINISH DAY</span>
+<span class="font-label text-[10px] font-bold text-black opacity-70 uppercase tracking-widest">Lock your day and earn XP</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-[#FBFBF9] dark:bg-stone-900 border-t-4 border-black dark:border-white flex justify-around items-stretch z-50">
+<a class="flex flex-col items-center justify-center bg-[#FDC800] text-black border-l-4 border-black h-full px-4 scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-label mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 h-full px-4 hover:bg-stone-200 dark:hover:bg-stone-800" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-label mt-1">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 h-full px-4 hover:bg-stone-200 dark:hover:bg-stone-800" href="#">
+<span class="material-symbols-outlined" data-icon="leaderboard">leaderboard</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-label mt-1">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 h-full px-4 hover:bg-stone-200 dark:hover:bg-stone-800" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-label mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

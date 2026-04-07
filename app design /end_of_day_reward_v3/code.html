@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reset21 - Day 4 Complete</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#0c0f0e",
+                        "on-error": "#ffefec",
+                        "primary": "#715800",
+                        "surface-variant": "#dbdddb",
+                        "secondary": "#4f3de3",
+                        "on-primary-container": "#574300",
+                        "secondary-fixed-dim": "#c2bdff",
+                        "surface": "#f6f6f5",
+                        "primary-container": "#fdc800",
+                        "surface-dim": "#d3d5d3",
+                        "surface-container-low": "#f0f1ef",
+                        "background": "#f6f6f5",
+                        "error-dim": "#b92902",
+                        "tertiary-fixed-dim": "#73f08c",
+                        "surface-container": "#e7e8e6",
+                        "on-primary": "#fff1d6",
+                        "on-tertiary-fixed-variant": "#006c2d",
+                        "on-background": "#2d2f2e",
+                        "primary-fixed-dim": "#ecbb00",
+                        "primary-fixed": "#fdc800",
+                        "on-surface-variant": "#5a5c5b",
+                        "surface-container-high": "#e1e3e1",
+                        "on-tertiary-fixed": "#004c1d",
+                        "on-primary-fixed-variant": "#624c00",
+                        "outline-variant": "#acadac",
+                        "secondary-container": "#d1ccff",
+                        "on-secondary": "#f5f1ff",
+                        "on-primary-fixed": "#403000",
+                        "on-tertiary-container": "#006127",
+                        "surface-bright": "#f6f6f5",
+                        "surface-tint": "#715800",
+                        "on-tertiary": "#cfffcf",
+                        "secondary-fixed": "#d1ccff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#442ed8",
+                        "on-secondary-container": "#3a1fcf",
+                        "tertiary-dim": "#005d25",
+                        "inverse-on-surface": "#9c9d9c",
+                        "error": "#b02500",
+                        "primary-dim": "#634d00",
+                        "on-surface": "#2d2f2e",
+                        "on-secondary-fixed": "#2700ad",
+                        "tertiary-container": "#82ff99",
+                        "tertiary-fixed": "#82ff99",
+                        "error-container": "#f95630",
+                        "secondary-dim": "#432dd7",
+                        "outline": "#767776",
+                        "surface-container-highest": "#dbdddb",
+                        "tertiary": "#006a2c",
+                        "inverse-primary": "#fdc800",
+                        "on-error-container": "#520c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-shadow {
+            box-shadow: 8px 8px 0px 0px #1C293C;
+        }
+        .neo-shadow-sm {
+            box-shadow: 4px 4px 0px 0px #1C293C;
+        }
+        .neo-shadow-active:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px #1C293C;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface overflow-hidden">
+<!-- Top AppBar (From Shared Components) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-3 bg-[#FBFBF9] border-b-4 border-[#1C293C] shadow-[4px_4px_0px_0px_#1C293C]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1C293C]" data-icon="menu">menu</span>
+<h1 class="text-2xl font-black tracking-tighter uppercase font-headline text-[#1C293C]">RESET21</h1>
+</div>
+<div class="font-mono text-sm font-bold text-[#FDC800] bg-[#1C293C] px-3 py-1 border-2 border-[#1C293C]">
+            LVL 02 WARRIOR • 320 XP
+        </div>
+</header>
+<!-- Main Content Canvas -->
+<main class="min-h-screen pt-20 pb-24 flex items-center justify-center p-4 relative overflow-hidden">
+<!-- Background "Confetti" Decorative Elements -->
+<div class="absolute inset-0 pointer-events-none opacity-20">
+<div class="absolute top-20 left-10 rotate-12 text-secondary">
+<span class="material-symbols-outlined text-6xl" data-icon="celebration">celebration</span>
+</div>
+<div class="absolute bottom-40 right-10 -rotate-12 text-primary-fixed">
+<span class="material-symbols-outlined text-7xl" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="absolute top-1/2 left-1/4 -rotate-45 text-tertiary">
+<span class="material-symbols-outlined text-5xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="absolute top-1/3 right-1/4 rotate-45 text-error">
+<span class="material-symbols-outlined text-4xl" data-icon="grade" style="font-variation-settings: 'FILL' 1;">grade</span>
+</div>
+</div>
+<!-- The Reward Card -->
+<div class="max-w-md w-full bg-primary-container border-4 border-[#1C293C] neo-shadow relative z-10 p-8 flex flex-col items-center">
+<!-- Badge Top -->
+<div class="bg-secondary-dim text-on-secondary border-2 border-[#1C293C] px-6 py-1 mb-6 neo-shadow-sm rotate-[-2deg]">
+<span class="font-label text-sm uppercase font-bold tracking-widest">🎖️ REWARD UNLOCKED</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline text-4xl font-black tracking-tighter uppercase text-center mb-2 leading-none">
+                DAY 4 COMPLETE
+            </h2>
+<!-- Score Display -->
+<div class="bg-white border-4 border-[#1C293C] w-full p-6 my-6 flex flex-col items-center justify-center neo-shadow-sm">
+<p class="font-label text-xs uppercase font-bold mb-1 opacity-60">Daily Discipline Score</p>
+<div class="font-mono text-8xl font-black text-[#1C293C] tracking-tighter leading-none">
+                    7/10
+                </div>
+</div>
+<!-- Motivation Message -->
+<p class="font-headline text-xl font-bold italic uppercase mb-8 text-center text-[#1C293C] tracking-tight">
+                "GOOD, PUSH HARDER"
+            </p>
+<!-- Stats Grid -->
+<div class="w-full space-y-4 mb-8">
+<!-- Streak -->
+<div class="flex items-center justify-between bg-surface-container-lowest border-2 border-[#1C293C] p-3 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label text-sm font-bold uppercase">Streak</span>
+</div>
+<span class="font-mono font-bold text-lg">5 DAYS</span>
+</div>
+<!-- XP -->
+<div class="flex items-center justify-between bg-surface-container-lowest border-2 border-[#1C293C] p-3 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-sm font-bold uppercase">XP Earned</span>
+</div>
+<span class="font-mono font-bold text-lg">+70 XP</span>
+</div>
+<!-- Level Badge -->
+<div class="flex items-center justify-between bg-secondary-container border-2 border-[#1C293C] p-3 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-dim" data-icon="military_tech">military_tech</span>
+<span class="font-label text-sm font-bold uppercase">Current Rank</span>
+</div>
+<span class="font-headline font-black text-sm uppercase">LEVEL 2 – WARRIOR</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col gap-4">
+<button class="w-full bg-[#FDC800] text-[#1C293C] border-4 border-[#1C293C] py-4 font-headline font-black text-xl uppercase tracking-widest neo-shadow-sm neo-shadow-active transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined font-black" data-icon="share">share</span>
+                    SHARE
+                </button>
+<button class="w-full bg-white text-[#1C293C] border-4 border-[#1C293C] py-4 font-headline font-black text-xl uppercase tracking-widest neo-shadow-sm neo-shadow-active transition-all flex items-center justify-center gap-2">
+                    CONTINUE
+                    <span class="material-symbols-outlined font-black" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Motivational Remark (Handwritten style emulation) -->
+<div class="mt-8 pt-6 border-t-2 border-[#1C293C]/10 w-full text-center">
+<p class="font-body italic text-sm text-[#1C293C]/70">
+                    "Not every day is productive, but I didn't quit."
+                </p>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (From Shared Components) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-[#FBFBF9] border-t-4 border-[#1C293C] shadow-[0px_-4px_0px_0px_#1C293C]">
+<div class="flex flex-col items-center justify-center text-[#1C293C] opacity-80 hover:bg-[#432DD7] hover:text-white transition-colors p-1">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-mono text-[10px] uppercase">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1C293C] opacity-80 hover:bg-[#432DD7] hover:text-white transition-colors p-1">
+<span class="material-symbols-outlined" data-icon="event_note">event_note</span>
+<span class="font-mono text-[10px] uppercase">Plans</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#FDC800] text-[#1C293C] border-2 border-black shadow-[2px_2px_0px_0px_#000] p-1 scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+<span class="font-mono text-[10px] uppercase">Progress</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1C293C] opacity-80 hover:bg-[#432DD7] hover:text-white transition-colors p-1">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-mono text-[10px] uppercase">Profile</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@700&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#ecbb00",
+                    "on-secondary-fixed-variant": "#442ed8",
+                    "surface": "#f6f6f5",
+                    "surface-container": "#e7e8e6",
+                    "surface-container-low": "#f0f1ef",
+                    "background": "#f6f6f5",
+                    "on-tertiary-fixed": "#004c1d",
+                    "tertiary": "#006a2c",
+                    "surface-container-high": "#e1e3e1",
+                    "on-background": "#2d2f2e",
+                    "primary-container": "#fdc800",
+                    "surface-bright": "#f6f6f5",
+                    "on-error-container": "#520c00",
+                    "surface-dim": "#d3d5d3",
+                    "tertiary-container": "#82ff99",
+                    "error-dim": "#b92902",
+                    "on-surface": "#2d2f2e",
+                    "secondary-fixed": "#d1ccff",
+                    "on-secondary-container": "#3a1fcf",
+                    "outline-variant": "#acadac",
+                    "on-primary-container": "#574300",
+                    "secondary-fixed-dim": "#c2bdff",
+                    "on-primary": "#fff1d6",
+                    "primary-fixed": "#fdc800",
+                    "tertiary-fixed-dim": "#73f08c",
+                    "on-tertiary-container": "#006127",
+                    "secondary-dim": "#432dd7",
+                    "secondary-container": "#d1ccff",
+                    "secondary": "#4f3de3",
+                    "on-surface-variant": "#5a5c5b",
+                    "on-tertiary": "#cfffcf",
+                    "outline": "#767776",
+                    "error": "#b02500",
+                    "inverse-surface": "#0c0f0e",
+                    "on-primary-fixed": "#403000",
+                    "on-primary-fixed-variant": "#624c00",
+                    "error-container": "#f95630",
+                    "inverse-primary": "#fdc800",
+                    "on-tertiary-fixed-variant": "#006c2d",
+                    "on-error": "#ffefec",
+                    "surface-container-highest": "#dbdddb",
+                    "on-secondary": "#f5f1ff",
+                    "tertiary-fixed": "#82ff99",
+                    "inverse-on-surface": "#9c9d9c",
+                    "tertiary-dim": "#005d25",
+                    "primary": "#715800",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#2700ad",
+                    "surface-variant": "#dbdddb",
+                    "primary-dim": "#634d00",
+                    "surface-tint": "#715800"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Space Grotesk", "sans-serif"],
+                    "mono": ["JetBrains Mono", "monospace"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neobrutalist-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .neobrutalist-shadow-sm {
+            box-shadow: 2px 2px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .kinetic-press:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px rgba(28, 41, 60, 1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#FBFBF9] dark:bg-stone-900 border-b-4 border-stone-900 dark:border-stone-50 shadow-[4px_4px_0px_0px_rgba(28,41,60,1)] sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 border-2 border-stone-900 overflow-hidden">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a determined young man with glasses in a minimalist digital art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsNYLkjrtgYvmBvbQh8k9YSPuH7wHu2Ixidw_3y8OOJs63kdGBfLKvRmy0_P7t6ltxPDNLdOVMdbOS4g_blObcRM7j9yM9CzBYgY5Qzcuc4nynrJwIQ6MHHs67lveqDQ8ZCNoqf_tKKTYpVsePnr4Yke4ABjoQgjLJfst1oDTcZKvGwc_MVSIMeJHd6FQiR6KWQUHIi3vYeFAn94LcMzm1v_xU6tsQiEQ1Veb7CDjvMUtYLYOaiwe7lLohhyb2wSnznSdga5R6SUw"/>
+</div>
+<span class="text-2xl font-black text-stone-900 dark:text-stone-50 font-sans tracking-tighter uppercase">DAY 04</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-yellow-500 dark:text-yellow-400 active:translate-y-1 active:translate-x-1 active:shadow-none transition-all hover:bg-stone-100 dark:hover:bg-stone-800 p-2">
+<span class="material-symbols-outlined" data-icon="local_fire_department">local_fire_department</span>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-6 py-8">
+<!-- Header Section -->
+<div class="mb-10">
+<h1 class="text-5xl font-black tracking-tighter uppercase mb-2">My Journey</h1>
+<div class="h-2 w-24 bg-primary-container border-2 border-stone-900"></div>
+</div>
+<!-- Cumulative Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Stat Card 1 -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-6 neobrutalist-shadow">
+<p class="font-label text-xs uppercase tracking-widest text-stone-500 mb-2">Total Days Completed</p>
+<p class="font-mono text-4xl text-stone-900">25</p>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-6 neobrutalist-shadow">
+<p class="font-label text-xs uppercase tracking-widest text-stone-500 mb-2">Avg Score</p>
+<div class="flex items-baseline gap-1">
+<p class="font-mono text-4xl text-stone-900">8.2</p>
+<p class="font-mono text-sm text-stone-400">/10</p>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-primary-container border-4 border-stone-900 p-6 neobrutalist-shadow">
+<p class="font-label text-xs uppercase tracking-widest text-on-primary-container mb-2">Best Streak</p>
+<div class="flex items-center gap-2">
+<p class="font-mono text-4xl text-stone-900">12</p>
+<span class="material-symbols-outlined text-stone-900" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+</div>
+</div>
+<!-- 21-Day Calendar Grid -->
+<section class="mb-12">
+<div class="flex justify-between items-end mb-6">
+<h2 class="text-2xl font-black uppercase tracking-tight">21-Day Reset Tracker</h2>
+<span class="font-mono text-sm bg-stone-900 text-white px-3 py-1">CYCLE #02</span>
+</div>
+<div class="bg-surface-container-low border-4 border-stone-900 p-8 neobrutalist-shadow">
+<div class="grid grid-cols-7 gap-4">
+<!-- Day 1-3 Success -->
+<div class="aspect-square border-4 border-stone-900 bg-tertiary flex flex-col items-center justify-center text-white">
+<span class="font-mono text-xs">01</span>
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div class="aspect-square border-4 border-stone-900 bg-tertiary flex flex-col items-center justify-center text-white">
+<span class="font-mono text-xs">02</span>
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div class="aspect-square border-4 border-stone-900 bg-error flex flex-col items-center justify-center text-white">
+<span class="font-mono text-xs">03</span>
+<span class="material-symbols-outlined text-xl">close</span>
+</div>
+<!-- Current Day 4 -->
+<div class="aspect-square border-4 border-stone-900 bg-primary-container flex flex-col items-center justify-center ring-4 ring-primary ring-inset">
+<span class="font-mono text-xs font-bold text-stone-900">04</span>
+<span class="text-[10px] font-black uppercase font-label mt-1">Today</span>
+</div>
+<!-- Future Days 5-21 -->
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400">
+<span class="font-mono text-xs">05</span>
+</div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400">
+<span class="font-mono text-xs">06</span>
+</div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400">
+<span class="font-mono text-xs">07</span>
+</div>
+<!-- Row 2 -->
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">08</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">09</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">10</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">11</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">12</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">13</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">14</span></div>
+<!-- Row 3 -->
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">15</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">16</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">17</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">18</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">19</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">20</span></div>
+<div class="aspect-square border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"><span class="font-mono text-xs">21</span></div>
+</div>
+</div>
+</section>
+<!-- Achievement Badges -->
+<section class="mb-12">
+<h2 class="text-2xl font-black uppercase tracking-tight mb-6">Unlocked Achievements</h2>
+<div class="flex flex-wrap gap-4">
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutalist-shadow flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary flex items-center justify-center text-white border-2 border-stone-900">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+</div>
+<div>
+<p class="font-black uppercase text-sm leading-tight">Early Bird</p>
+<p class="text-[10px] font-label text-stone-500 uppercase">7 Days @ 6 AM</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutalist-shadow flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary flex items-center justify-center text-white border-2 border-stone-900">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div>
+<p class="font-black uppercase text-sm leading-tight">Hydration King</p>
+<p class="text-[10px] font-label text-stone-500 uppercase">3L Daily Streak</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-4 neobrutalist-shadow flex items-center gap-4 opacity-50 grayscale">
+<div class="w-12 h-12 bg-stone-400 flex items-center justify-center text-white border-2 border-stone-900">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<div>
+<p class="font-black uppercase text-sm leading-tight">Study Pro</p>
+<p class="text-[10px] font-label text-stone-500 uppercase">Locked: 25 Hrs Total</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Actions -->
+<div class="flex flex-col md:flex-row gap-4 pt-6 border-t-4 border-stone-900">
+<button class="flex-1 bg-surface border-4 border-stone-900 p-4 font-black uppercase tracking-widest kinetic-press neobrutalist-shadow flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                Export History
+            </button>
+<button class="flex-1 bg-secondary text-white border-4 border-stone-900 p-4 font-black uppercase tracking-widest kinetic-press neobrutalist-shadow flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">share</span>
+                Share Progress
+            </button>
+</div>
+<!-- Remarks Section (Handwritten Style) -->
+<div class="mt-16 p-8 bg-[#fffced] border-l-8 border-primary relative overflow-hidden">
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-8xl text-primary/10 rotate-12">format_quote</span>
+<p class="text-xl italic font-serif text-stone-700 leading-relaxed max-w-2xl relative z-10">
+                "Not every day is productive, but I didn't quit."
+            </p>
+<p class="mt-4 font-mono text-xs uppercase text-stone-500">— Day 03 Reflection</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-2 bg-surface border-t-4 border-stone-900 dark:border-stone-50">
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-mono text-[10px] font-bold uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-mono text-[10px] font-bold uppercase">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FDC800] text-stone-900 border-2 border-stone-900 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="leaderboard" style="font-variation-settings: 'FILL' 1;">leaderboard</span>
+<span class="font-mono text-[10px] font-bold uppercase">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-mono text-[10px] font-bold uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

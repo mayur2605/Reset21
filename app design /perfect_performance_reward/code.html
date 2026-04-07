@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RESET21 - PERFORMANCE UNLOCKED</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=JetBrains+Mono:wght@700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#b02500",
+                        "secondary": "#4f3de3",
+                        "secondary-dim": "#432dd7",
+                        "error-dim": "#b92902",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#d1ccff",
+                        "surface-tint": "#715800",
+                        "primary-fixed": "#fdc800",
+                        "on-tertiary-container": "#006127",
+                        "on-secondary-fixed-variant": "#442ed8",
+                        "outline": "#767776",
+                        "secondary-fixed-dim": "#c2bdff",
+                        "on-primary-container": "#574300",
+                        "on-tertiary": "#cfffcf",
+                        "on-secondary-fixed": "#2700ad",
+                        "tertiary": "#006a2c",
+                        "tertiary-dim": "#005d25",
+                        "tertiary-fixed-dim": "#73f08c",
+                        "surface-container-highest": "#dbdddb",
+                        "secondary-fixed": "#d1ccff",
+                        "on-secondary-container": "#3a1fcf",
+                        "on-surface": "#2d2f2e",
+                        "primary-container": "#fdc800",
+                        "on-primary": "#fff1d6",
+                        "primary": "#715800",
+                        "tertiary-container": "#82ff99",
+                        "background": "#f6f6f5",
+                        "on-primary-fixed-variant": "#624c00",
+                        "on-surface-variant": "#5a5c5b",
+                        "on-primary-fixed": "#403000",
+                        "surface-variant": "#dbdddb",
+                        "on-background": "#2d2f2e",
+                        "error-container": "#f95630",
+                        "on-tertiary-fixed": "#004c1d",
+                        "on-secondary": "#f5f1ff",
+                        "on-error": "#ffefec",
+                        "outline-variant": "#acadac",
+                        "surface-container-low": "#f0f1ef",
+                        "primary-fixed-dim": "#ecbb00",
+                        "surface-dim": "#d3d5d3",
+                        "inverse-surface": "#0c0f0e",
+                        "surface-container-high": "#e1e3e1",
+                        "surface-container": "#e7e8e6",
+                        "on-error-container": "#520c00",
+                        "tertiary-fixed": "#82ff99",
+                        "surface": "#f6f6f5",
+                        "inverse-primary": "#fdc800",
+                        "surface-bright": "#f6f6f5",
+                        "on-tertiary-fixed-variant": "#006c2d",
+                        "inverse-on-surface": "#9c9d9c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .neobrutal-shadow { box-shadow: 8px 8px 0px 0px #1C293C; }
+        .neobrutal-shadow-sm { box-shadow: 4px 4px 0px 0px #1C293C; }
+        .neobrutal-shadow-active:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0px 0px #1C293C; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48; }
+        .confetti-pattern {
+            background-image: radial-gradient(#432DD7 2px, transparent 2px), radial-gradient(#16A34A 2px, transparent 2px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container">
+<!-- Top Navigation Anchor (Manual construction based on JSON & Conflict Resolution) -->
+<nav class="fixed top-0 w-full z-50 border-b-4 border-[#1C293C] bg-[#FBFBF9] dark:bg-[#1C293C] flex justify-between items-center px-4 h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#1C293C] dark:text-[#FBFBF9]">menu</span>
+<span class="font-['Inter'] font-black tracking-tighter uppercase text-2xl text-[#1C293C] dark:text-[#FBFBF9]">RESET21</span>
+</div>
+<div class="w-10 h-10 border-2 border-[#1C293C] overflow-hidden">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="close-up portrait of a determined young athlete with short dark hair in high contrast dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZiZzYGhYTuQvpYLP7S-YywSxrhY-XkuE9ZeujKK4FbZncaLSGHMhcGgYqiJ88Ay73B7E8netuYRzAvOjn-03y-x-vgpIcSZYNPGHBeiwf2uMDSyNFWoKe36Oau7vwik57xXncWTqphWN6VNgvQFP4wvDARL4dTLvXqyvVbDPyWWkXw4twoINEsfXXm-aU0azDW4BKkoiwWP4cOIBW9q4ephemgnSQ_7P62xro4agadL1MnXrkxxF3u_BhrQ3WQHRc8UZv0khw9P0"/>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-4 max-w-2xl mx-auto min-h-screen">
+<!-- Reward Card Container -->
+<div class="bg-primary-container border-[3px] border-[#1C293C] neobrutal-shadow p-6 relative overflow-hidden">
+<!-- Confetti Visual Overlay (Pseudo-effect) -->
+<div class="absolute inset-0 opacity-10 confetti-pattern pointer-events-none"></div>
+<!-- Header Section -->
+<div class="relative z-10 text-center mb-8">
+<div class="inline-block bg-[#1C293C] text-primary-container px-4 py-1 font-mono text-sm mb-4">
+                    PERFORMANCE_LOG_021
+                </div>
+<h1 class="font-headline font-black text-6xl md:text-8xl tracking-tighter leading-none mb-2">
+                    10/10
+                </h1>
+<p class="font-headline font-black text-2xl md:text-4xl uppercase tracking-tight text-[#1C293C]">
+                    DISCIPLINE LOCKED
+                </p>
+</div>
+<!-- Kinetic Metrics Bento -->
+<div class="grid grid-cols-2 gap-4 mb-8 relative z-10">
+<!-- Streak -->
+<div class="bg-surface border-[3px] border-[#1C293C] p-4 neobrutal-shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-error">local_fire_department</span>
+<span class="font-label font-bold text-xs uppercase tracking-widest text-on-surface-variant">Streak</span>
+</div>
+<div class="font-mono text-3xl">5 DAYS</div>
+</div>
+<!-- XP Earned -->
+<div class="bg-surface border-[3px] border-[#1C293C] p-4 neobrutal-shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary">star</span>
+<span class="font-label font-bold text-xs uppercase tracking-widest text-on-surface-variant">XP Earned</span>
+</div>
+<div class="font-mono text-3xl">+120 XP</div>
+<div class="font-label text-[10px] uppercase font-bold text-tertiary">PERFECT BONUS!</div>
+</div>
+<!-- Level Stats -->
+<div class="col-span-2 bg-secondary text-white border-[3px] border-[#1C293C] p-6 neobrutal-shadow-sm">
+<div class="flex justify-between items-end mb-4">
+<div>
+<span class="font-label font-bold text-xs uppercase tracking-widest text-secondary-container">Current Status</span>
+<h2 class="font-headline font-black text-3xl uppercase tracking-tighter">LEVEL 2 (WARRIOR)</h2>
+</div>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-[#1C293C] h-8 border-[3px] border-[#1C293C] p-1 mb-2">
+<div class="h-full bg-tertiary-fixed w-[65%]"></div>
+</div>
+<div class="flex justify-between font-mono text-xs uppercase tracking-tighter">
+<span>880 / 1000 XP</span>
+<span class="text-secondary-container">120 XP to reach next level</span>
+</div>
+</div>
+</div>
+<!-- Next Day Hook -->
+<div class="bg-surface-container-low border-[3px] border-[#1C293C] border-dashed p-4 mb-8 text-center">
+<p class="font-headline font-bold uppercase tracking-tight text-[#1C293C]">
+                    Next Phase: <span class="text-secondary font-black italic">Day 5 unlocks tomorrow</span>
+</p>
+<p class="font-label text-xs text-on-surface-variant mt-1">THE RESET CONTINUES AT 06:00 AM</p>
+</div>
+<!-- Shareable Preview -->
+<div class="mb-8">
+<span class="font-label font-bold text-[10px] uppercase tracking-[0.2em] mb-2 block text-center opacity-60">Instagram Preview</span>
+<div class="bg-[#1C293C] p-2 neobrutal-shadow-sm">
+<div class="aspect-square bg-primary text-[#1C293C] flex flex-col items-center justify-center p-8 border-2 border-primary-container">
+<img alt="Mountain peak" class="w-full h-full object-cover grayscale contrast-150 mb-4 border-4 border-[#1C293C]" data-alt="minimalist silhouette of a mountain peak against a vibrant yellow morning sky graphic neobrutalist style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY9fuKZ1iwBxqNXhgD5lKjMVFIocL9I3QZi6Syqg3BZM9l8xuM3qp_FqBZM832vF1K_YlDhj9Pbo85FEg_guMcb1JjbUK3cUA7X_F1ACcU6VllDqN26VqM-UcwnB6S2Tb9utudpKMFhsg3t3B9ki0SoP5Zcu9RzD8HnMFhZV-SQIoVpSlYYJIjJkm0gHGRLtsSo5kie5wxjlJZy0sXYC4EjnLXCSfh8FIHWvw8xj7VNwjn1wI1lyGBX8o2zHZxRDR_e2c8AIfYU4g"/>
+<div class="text-center">
+<div class="font-mono text-4xl font-black">10/10</div>
+<div class="font-headline font-black text-xl uppercase tracking-tighter">DISCIPLINE_LOCKED</div>
+<div class="font-mono text-xs mt-2">RESET21 // DAY 04</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="space-y-4 relative z-10">
+<button class="w-full bg-[#1C293C] text-primary-fixed font-headline font-black py-4 border-[3px] border-[#1C293C] neobrutal-shadow-sm neobrutal-shadow-active uppercase tracking-widest text-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">share</span>
+                    SHARE TO INSTAGRAM
+                </button>
+<button class="w-full bg-surface text-[#1C293C] font-headline font-black py-4 border-[3px] border-[#1C293C] neobrutal-shadow-sm neobrutal-shadow-active uppercase tracking-widest text-lg">
+                    CONTINUE
+                </button>
+</div>
+<!-- Footer Quote (from design system mandate) -->
+<div class="mt-12 text-center">
+<p class="font-['Inter'] italic text-sm text-on-surface-variant max-w-[80%] mx-auto">
+                    "Not every day is productive, but I didn't quit."
+                </p>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell (JSON Component Execution) -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-stretch bg-[#FBFBF9] dark:bg-[#1C293C] border-t-4 border-[#1C293C] z-50">
+<!-- REWARDS is active given this is a rewards screen -->
+<a class="flex flex-col items-center justify-center text-[#1C293C] dark:text-[#FBFBF9] px-2 hover:bg-[#FDC800]/50" href="#">
+<span class="material-symbols-outlined">edit_note</span>
+<span class="font-['JetBrains_Mono'] text-[10px] font-bold uppercase">JOURNAL</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1C293C] dark:text-[#FBFBF9] px-2 hover:bg-[#FDC800]/50" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="font-['JetBrains_Mono'] text-[10px] font-bold uppercase">STATS</span>
+</a>
+<!-- ACTIVE TAB -->
+<a class="flex flex-col items-center justify-center bg-[#FDC800] text-[#1C293C] border-l-4 border-r-4 border-[#1C293C] h-full px-2 scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-['JetBrains_Mono'] text-[10px] font-bold uppercase">REWARDS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1C293C] dark:text-[#FBFBF9] px-2 hover:bg-[#FDC800]/50" href="#">
+<span class="material-symbols-outlined">share</span>
+<span class="font-['JetBrains_Mono'] text-[10px] font-bold uppercase">SOCIAL</span>
+</a>
+</nav>
+</body></html>

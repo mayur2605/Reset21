@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e1e3e1",
+                    "on-surface": "#2d2f2e",
+                    "on-primary": "#fff1d6",
+                    "on-secondary": "#f5f1ff",
+                    "inverse-surface": "#0c0f0e",
+                    "primary-fixed": "#fdc800",
+                    "tertiary-fixed": "#82ff99",
+                    "tertiary-container": "#82ff99",
+                    "on-primary-container": "#574300",
+                    "surface-container-low": "#f0f1ef",
+                    "surface-variant": "#dbdddb",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#d1ccff",
+                    "error-dim": "#b92902",
+                    "on-primary-fixed": "#403000",
+                    "inverse-on-surface": "#9c9d9c",
+                    "outline": "#767776",
+                    "tertiary-dim": "#005d25",
+                    "tertiary-fixed-dim": "#73f08c",
+                    "primary-dim": "#634d00",
+                    "on-tertiary-container": "#006127",
+                    "surface-bright": "#f6f6f5",
+                    "secondary": "#4f3de3",
+                    "primary-fixed-dim": "#ecbb00",
+                    "on-surface-variant": "#5a5c5b",
+                    "outline-variant": "#acadac",
+                    "error": "#b02500",
+                    "secondary-fixed-dim": "#c2bdff",
+                    "on-error": "#ffefec",
+                    "on-secondary-container": "#3a1fcf",
+                    "on-error-container": "#520c00",
+                    "on-primary-fixed-variant": "#624c00",
+                    "secondary-container": "#d1ccff",
+                    "secondary-dim": "#432dd7",
+                    "primary": "#715800",
+                    "on-secondary-fixed-variant": "#442ed8",
+                    "tertiary": "#006a2c",
+                    "on-secondary-fixed": "#2700ad",
+                    "on-tertiary": "#cfffcf",
+                    "surface-container-highest": "#dbdddb",
+                    "on-background": "#2d2f2e",
+                    "surface": "#f6f6f5",
+                    "inverse-primary": "#fdc800",
+                    "on-tertiary-fixed": "#004c1d",
+                    "error-container": "#f95630",
+                    "on-tertiary-fixed-variant": "#006c2d",
+                    "background": "#f6f6f5",
+                    "primary-container": "#fdc800",
+                    "surface-dim": "#d3d5d3",
+                    "surface-container": "#e7e8e6",
+                    "surface-tint": "#715800"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Space Grotesk", "sans-serif"],
+                    "mono": ["JetBrains Mono", "monospace"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neobrutal-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .neobrutal-shadow-large {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+        .neobrutal-shadow-active:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+        }
+        .brutal-bg-pattern {
+            background-color: #fdc800;
+            background-image: radial-gradient(circle at 20% 30%, #432dd7 2%, transparent 0), 
+                              radial-gradient(circle at 80% 70%, #16a34a 3%, transparent 0),
+                              linear-gradient(45deg, transparent 48%, #000 48%, #000 52%, transparent 52%);
+            background-size: 100px 100px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface overflow-hidden">
+<!-- Top Navigation Anchor -->
+<header class="w-full top-0 z-50 border-b-4 border-black bg-[#FBFBF9] flex justify-between items-center px-4 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<div class="flex items-center gap-2">
+<span class="text-xl font-black italic tracking-tighter text-black">RESET21</span>
+<span class="bg-black text-white px-2 py-0.5 font-label text-[10px] tracking-widest uppercase">LVL 02 WARRIOR</span>
+</div>
+<div class="font-mono font-bold text-black bg-primary-container border-2 border-black px-3 py-1 neobrutal-shadow">
+            1,250 XP
+        </div>
+</header>
+<main class="min-h-[calc(100vh-68px)] w-full flex items-center justify-center p-4 md:p-8 brutal-bg-pattern relative">
+<!-- Brutalist Decoration Shapes -->
+<div class="absolute top-10 right-10 w-24 h-24 border-4 border-black bg-secondary-dim rotate-12 z-0 hidden md:block"></div>
+<div class="absolute bottom-20 left-10 w-16 h-16 border-4 border-black bg-tertiary-container -rotate-12 z-0 hidden md:block"></div>
+<div class="absolute top-1/2 left-5 w-8 h-32 border-4 border-black bg-white opacity-20 z-0"></div>
+<!-- Main Reward Card -->
+<div class="max-w-2xl w-full bg-white border-4 border-black p-6 md:p-12 neobrutal-shadow-large z-10 flex flex-col items-center text-center">
+<div class="mb-6">
+<span class="font-mono text-sm md:text-lg font-bold tracking-tight bg-black text-white px-4 py-1">
+                    DAY PROGRESS: DAY 04 OF 21
+                </span>
+</div>
+<div class="flex flex-col items-center mb-8">
+<h1 class="font-mono text-[8rem] md:text-[12rem] leading-none font-extrabold text-black tracking-tighter">
+                    7/10
+                </h1>
+<div class="w-full h-8 border-4 border-black bg-surface-container mt-[-1rem] md:mt-[-2rem] relative overflow-hidden">
+<div class="h-full bg-secondary-dim w-[70%] border-r-4 border-black"></div>
+</div>
+</div>
+<h2 class="font-headline text-4xl md:text-7xl font-black text-black italic tracking-tighter mb-8 uppercase">
+                YOU DIDN'T QUIT.
+            </h2>
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-10">
+<div class="border-4 border-black p-4 flex items-center justify-center gap-3 bg-white neobrutal-shadow">
+<span class="text-3xl">🔥</span>
+<span class="font-label text-xl font-bold uppercase tracking-tight text-black">5 DAY STREAK</span>
+</div>
+<div class="border-4 border-black p-4 flex items-center justify-center gap-3 bg-secondary-container neobrutal-shadow">
+<span class="material-symbols-outlined text-secondary-dim font-bold" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-mono text-xl font-bold text-on-secondary-container">+70 XP EARNED</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col w-full gap-4">
+<button class="w-full bg-primary-container border-4 border-black py-5 font-headline font-black text-2xl text-black tracking-tight neobrutal-shadow neobrutal-shadow-active transition-all flex items-center justify-center gap-3">
+                    SHARE PROGRESS
+                    <span class="material-symbols-outlined">share</span>
+</button>
+<button class="w-full bg-transparent border-2 border-black py-4 font-label font-bold text-lg text-black tracking-widest uppercase hover:bg-surface-container transition-colors">
+                    CONTINUE TOMORROW
+                </button>
+</div>
+<!-- Remarks Decoration -->
+<div class="mt-12 text-stone-500 font-medium italic border-t-2 border-stone-200 pt-4 w-full text-sm">
+                "Not every day is productive, but consistency is the only way forward."
+            </div>
+</div>
+</main>
+<!-- Navigation Shell Suppressed for Focus Screen -->
+<!-- (Per "The Destination Rule" and "Automatic Suppression" for Success Screens) -->
+</body></html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=JetBrains+Mono:wght@700&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#f5f1ff",
+                    "tertiary-fixed": "#82ff99",
+                    "surface-container-highest": "#dbdddb",
+                    "surface-tint": "#715800",
+                    "surface-variant": "#dbdddb",
+                    "on-secondary-fixed": "#2700ad",
+                    "primary-dim": "#634d00",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#9c9d9c",
+                    "tertiary-dim": "#005d25",
+                    "primary": "#715800",
+                    "on-tertiary": "#cfffcf",
+                    "outline": "#767776",
+                    "secondary-container": "#d1ccff",
+                    "secondary": "#4f3de3",
+                    "on-surface-variant": "#5a5c5b",
+                    "on-tertiary-container": "#006127",
+                    "secondary-dim": "#432dd7",
+                    "primary-fixed": "#fdc800",
+                    "tertiary-fixed-dim": "#73f08c",
+                    "on-tertiary-fixed-variant": "#006c2d",
+                    "inverse-primary": "#fdc800",
+                    "on-error": "#ffefec",
+                    "error-container": "#f95630",
+                    "on-primary-fixed": "#403000",
+                    "on-primary-fixed-variant": "#624c00",
+                    "error": "#b02500",
+                    "inverse-surface": "#0c0f0e",
+                    "on-surface": "#2d2f2e",
+                    "error-dim": "#b92902",
+                    "tertiary-container": "#82ff99",
+                    "surface-dim": "#d3d5d3",
+                    "secondary-fixed-dim": "#c2bdff",
+                    "on-primary": "#fff1d6",
+                    "on-primary-container": "#574300",
+                    "on-secondary-container": "#3a1fcf",
+                    "outline-variant": "#acadac",
+                    "secondary-fixed": "#d1ccff",
+                    "background": "#f6f6f5",
+                    "on-tertiary-fixed": "#004c1d",
+                    "surface-container": "#e7e8e6",
+                    "surface-container-low": "#f0f1ef",
+                    "primary-fixed-dim": "#ecbb00",
+                    "on-secondary-fixed-variant": "#442ed8",
+                    "surface": "#f6f6f5",
+                    "surface-bright": "#f6f6f5",
+                    "on-error-container": "#520c00",
+                    "primary-container": "#fdc800",
+                    "on-background": "#2d2f2e",
+                    "tertiary": "#006a2c",
+                    "surface-container-high": "#e1e3e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"],
+                    "mono": ["JetBrains Mono"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hard-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .hard-shadow-active {
+            box-shadow: 0px 0px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .kinetic-press:active {
+            transform: translate(4px, 4px);
+            box-shadow: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full border-b-4 border-stone-900 dark:border-stone-50 z-50 bg-[#FBFBF9] dark:bg-stone-950 flex justify-between items-center px-4 h-16 w-full shadow-[4px_4px_0px_0px_rgba(28,41,60,1)]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-stone-900" data-icon="menu">menu</span>
+<h1 class="font-['Inter'] font-black tracking-tighter uppercase text-2xl text-stone-900 dark:text-stone-50">RESET21</h1>
+</div>
+<div class="bg-primary-container px-3 py-1 border-2 border-stone-900 font-mono font-bold text-sm hard-shadow">
+            320 XP
+        </div>
+</header>
+<main class="pt-24 px-4 max-w-2xl mx-auto space-y-6">
+<!-- Main Reward Card -->
+<section class="bg-secondary p-8 border-4 border-stone-900 relative overflow-hidden shadow-[8px_8px_0px_0px_rgba(28,41,60,1)]">
+<!-- Decorative Elements -->
+<div class="absolute top-2 right-4 text-primary-fixed opacity-40 select-none pointer-events-none">
+<span class="material-symbols-outlined text-6xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="absolute bottom-4 left-4 text-tertiary-fixed opacity-40 select-none pointer-events-none">
+<span class="material-symbols-outlined text-6xl" data-icon="celebration">celebration</span>
+</div>
+<div class="relative z-10 text-center">
+<p class="font-label font-bold text-on-secondary uppercase tracking-[0.2em] text-sm mb-2">LVL 02 WARRIOR | 320 XP</p>
+<h2 class="font-headline font-black text-primary-fixed italic text-5xl md:text-6xl tracking-tighter mb-6 uppercase">DAY 4 COMPLETE</h2>
+<div class="inline-block bg-background border-4 border-stone-900 p-8 mb-6 hard-shadow">
+<p class="font-mono text-7xl md:text-8xl text-stone-900 tracking-tighter">7/10</p>
+<p class="font-label font-bold text-stone-500 uppercase mt-2">HABITS COMPLETED</p>
+</div>
+<div class="bg-primary-fixed text-stone-900 border-4 border-stone-900 py-3 px-6 inline-block font-headline font-black text-2xl tracking-tight mb-8">
+                    GOOD, PUSH HARDER
+                </div>
+</div>
+</section>
+<!-- Stats Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Streak Card -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-5 hard-shadow">
+<div class="flex items-center gap-3">
+<div class="bg-error-container p-2 border-2 border-stone-900">
+<span class="material-symbols-outlined text-stone-900 block" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div>
+<p class="font-mono font-bold text-xl uppercase">5 DAY STREAK</p>
+<p class="font-label text-xs text-stone-500">CONSISTENCY IS KEY</p>
+</div>
+</div>
+</div>
+<!-- XP Card -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-5 hard-shadow">
+<div class="flex items-center gap-3">
+<div class="bg-primary-fixed p-2 border-2 border-stone-900">
+<span class="material-symbols-outlined text-stone-900 block" data-icon="grade" style="font-variation-settings: 'FILL' 1;">grade</span>
+</div>
+<div>
+<p class="font-mono font-bold text-xl uppercase">+70 XP EARNED</p>
+<p class="font-label text-xs text-stone-500">DAILY TOTAL</p>
+</div>
+</div>
+</div>
+<!-- Rank Card -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 p-5 md:col-span-2 lg:col-span-1 hard-shadow">
+<div class="flex items-center gap-3">
+<div class="bg-tertiary-fixed p-2 border-2 border-stone-900">
+<span class="material-symbols-outlined text-stone-900 block" data-icon="military_tech" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div>
+<p class="font-mono font-bold text-xl uppercase">LEVEL 2 WARRIOR</p>
+<p class="font-label text-xs text-stone-500">NEXT RANK AT 500 XP</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Visualizer -->
+<div class="bg-surface border-4 border-stone-900 p-6 hard-shadow">
+<div class="flex justify-between items-end mb-4">
+<h3 class="font-headline font-black text-2xl uppercase tracking-tighter">PHASE 01 PROGRESS</h3>
+<span class="font-mono font-bold text-secondary">4 / 21 DAYS</span>
+</div>
+<div class="w-full bg-stone-200 border-4 border-stone-900 h-10 flex">
+<div class="h-full bg-secondary border-r-4 border-stone-900" style="width: 19.04%;"></div>
+<div class="h-full bg-primary-fixed border-r-4 border-stone-900 flex items-center justify-center font-mono text-xs font-bold" style="width: 4.76%;">D4</div>
+<div class="flex-1 h-full bg-transparent"></div>
+</div>
+</div>
+<!-- Motivation Quote Card -->
+<div class="bg-[#FBFBF9] border-4 border-stone-900 p-6 relative overflow-hidden">
+<span class="material-symbols-outlined absolute -bottom-4 -right-2 text-8xl text-stone-100 -z-0" data-icon="format_quote">format_quote</span>
+<p class="font-body italic text-lg relative z-10 text-stone-700">"Not every day is productive, but I didn't quit."</p>
+<p class="font-label font-bold text-xs uppercase mt-2 text-stone-500">— DAILY REFLECTION</p>
+</div>
+</main>
+<!-- Fixed Action Buttons Container -->
+<div class="fixed bottom-0 left-0 w-full p-4 bg-background border-t-4 border-stone-900 z-40 flex flex-col gap-3">
+<button class="w-full bg-primary-fixed text-stone-900 border-4 border-stone-900 py-5 font-headline font-black text-xl uppercase tracking-widest hard-shadow kinetic-press">
+            CONTINUE
+        </button>
+<button class="w-full bg-surface-container-lowest text-stone-900 border-4 border-stone-900 py-3 font-label font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2 kinetic-press">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+            SHARE PROGRESS
+        </button>
+</div>
+<!-- BottomNavBar (Suppressed as per task description being a Reward Screen, but provided in shell logic for structure reference) -->
+<!-- Not rendered due to Task-Focused Page suppression logic -->
+</body></html>

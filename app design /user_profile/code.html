@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile | Reset21</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-fixed-dim": "#ecbb00",
+                "on-tertiary-container": "#006127",
+                "inverse-primary": "#fdc800",
+                "on-background": "#2d2f2e",
+                "surface-container": "#e7e8e6",
+                "secondary-container": "#d1ccff",
+                "on-tertiary-fixed": "#004c1d",
+                "primary-container": "#fdc800",
+                "surface-container-highest": "#dbdddb",
+                "primary-fixed": "#fdc800",
+                "error": "#b02500",
+                "surface-dim": "#d3d5d3",
+                "tertiary-dim": "#005d25",
+                "outline-variant": "#acadac",
+                "tertiary": "#006a2c",
+                "surface-bright": "#f6f6f5",
+                "secondary-fixed": "#d1ccff",
+                "inverse-surface": "#0c0f0e",
+                "on-surface-variant": "#5a5c5b",
+                "inverse-on-surface": "#9c9d9c",
+                "secondary-fixed-dim": "#c2bdff",
+                "secondary-dim": "#432dd7",
+                "tertiary-fixed-dim": "#73f08c",
+                "outline": "#767776",
+                "surface-tint": "#715800",
+                "surface-container-low": "#f0f1ef",
+                "primary-dim": "#634d00",
+                "primary": "#715800",
+                "on-primary": "#fff1d6",
+                "on-secondary": "#f5f1ff",
+                "surface-container-lowest": "#ffffff",
+                "error-container": "#f95630",
+                "on-secondary-container": "#3a1fcf",
+                "secondary": "#4f3de3",
+                "on-error-container": "#520c00",
+                "on-secondary-fixed-variant": "#442ed8",
+                "on-surface": "#2d2f2e",
+                "on-tertiary-fixed-variant": "#006c2d",
+                "tertiary-fixed": "#82ff99",
+                "background": "#f6f6f5",
+                "on-primary-fixed": "#403000",
+                "surface": "#f6f6f5",
+                "on-error": "#ffefec",
+                "on-tertiary": "#cfffcf",
+                "on-primary-fixed-variant": "#624c00",
+                "on-secondary-fixed": "#2700ad",
+                "tertiary-container": "#82ff99",
+                "surface-variant": "#dbdddb",
+                "surface-container-high": "#e1e3e1",
+                "on-primary-container": "#574300",
+                "error-dim": "#b92902"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Inter"],
+                "body": ["Inter"],
+                "label": ["Space Grotesk"],
+                "mono": ["JetBrains Mono"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neobrutal-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .neobrutal-shadow-active {
+            box-shadow: 0px 0px 0px 0px rgba(28, 41, 60, 1);
+        }
+        .hard-border {
+            border: 3px solid #1C293C;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-[#FBFBF9] dark:bg-stone-900 border-b-4 border-stone-900 dark:border-stone-50 shadow-[4px_4px_0px_0px_rgba(28,41,60,1)] flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 border-2 border-stone-900 overflow-hidden">
+<img alt="user profile picture" class="w-full h-full object-cover" data-alt="close-up portrait of a man with minimalist glasses and a focused expression in a bright studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMYWpbTn5uEkVZtlOj9q0-oOWQHBjsy8jpczGNBkB8MTZzBIGs1FQLcoub4oVjxFzO-nv38P4pqYryeFO94UqVD6mwjMfsDAg9oXWulPmepqacpJeAA7Q4EqoSt9tTLfxOG1W56DsRxE0bVDMBkq8rc4dQzeyjH-Z6GZoadmScW_nDqdPkMETkNq362XOS4fd3q85wqIPKq3b6u-8c7q4dlPqfFR18Lhkr9ANfgz2D3CkX0kyP3wCRhKa6DbCZjLcnlMGy9tguKm8"/>
+</div>
+<h1 class="font-bold tracking-tighter uppercase font-sans text-2xl font-black text-stone-900 dark:text-stone-50">DAY 04</h1>
+</div>
+<div class="text-yellow-500 dark:text-yellow-400 active:translate-y-1 active:translate-x-1 active:shadow-none transition-all cursor-pointer">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</header>
+<main class="max-w-md mx-auto px-6 py-8 pb-32">
+<!-- Hero Section -->
+<section class="flex flex-col items-center mb-10">
+<div class="w-48 h-48 hard-border bg-white mb-6 p-2 neobrutal-shadow">
+<div class="w-full h-full border-2 border-stone-900 overflow-hidden">
+<img alt="STITCH_DESIGNER profile" class="w-full h-full object-cover grayscale" data-alt="professional modern portrait of a designer with urban background, high contrast editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHB9w2Wr77Orw4KOSq6Pk4iOIO9oPXhaRET4Nz406X2RsWkcvFlqOPvrhE5XO87Zbp3Bc3F4GC2qyVB6GTUwgIqFCfoG-3-xzngQsSnXJivkfYOPbSmdFssdgXTF-YBFhGO0HdHgTTrR-DCn--nXTShu9WSmCle2g1oTy3WNXq0onbqURWKQBDMG_5N2zgg7jxCN1E4EABVyeScBugXMJmXtogm1AzdbcvTgAqWdpxQnxdfgPJ7PdmoVbeL01olOUzeOmOwJ5DLEs"/>
+</div>
+</div>
+<h2 class="text-4xl font-black tracking-tight font-headline uppercase text-center mb-2">STITCH_DESIGNER</h2>
+<div class="inline-block px-3 py-1 bg-secondary text-on-secondary font-label text-sm uppercase hard-border">Pro Member</div>
+</section>
+<!-- Stats Bento Grid -->
+<section class="grid grid-cols-2 gap-4 mb-10">
+<div class="col-span-2 bg-primary-container hard-border p-6 neobrutal-shadow">
+<p class="font-label text-xs uppercase mb-1 font-bold">Progress Hub</p>
+<div class="flex justify-between items-end">
+<span class="text-5xl font-black font-mono">25</span>
+<span class="font-headline font-bold uppercase mb-2">Days Total</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest hard-border p-4 neobrutal-shadow">
+<p class="font-label text-[10px] uppercase mb-1 font-bold text-on-surface-variant">Current</p>
+<div class="flex flex-col">
+<span class="text-3xl font-black font-mono">12</span>
+<span class="font-headline font-bold text-xs uppercase">Streak</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest hard-border p-4 neobrutal-shadow">
+<p class="font-label text-[10px] uppercase mb-1 font-bold text-on-surface-variant">Accuracy</p>
+<div class="flex flex-col">
+<span class="text-3xl font-black font-mono">94%</span>
+<span class="font-headline font-bold text-xs uppercase">Consistency</span>
+</div>
+</div>
+</section>
+<!-- Settings List -->
+<section class="space-y-4 mb-10">
+<h3 class="font-headline font-black uppercase text-lg tracking-tight">System Preferences</h3>
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest hard-border neobrutal-shadow hover:bg-stone-50 active:translate-y-1 active:translate-x-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+<span class="font-headline font-bold uppercase text-sm">Notifications</span>
+</div>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest hard-border neobrutal-shadow hover:bg-stone-50 active:translate-y-1 active:translate-x-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl">lock</span>
+<span class="font-headline font-bold uppercase text-sm">Account Privacy</span>
+</div>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest hard-border neobrutal-shadow hover:bg-stone-50 active:translate-y-1 active:translate-x-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl">contrast</span>
+<span class="font-headline font-bold uppercase text-sm">Theme (Light/Dark)</span>
+</div>
+<span class="font-label text-xs font-bold uppercase text-secondary">Light</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest hard-border neobrutal-shadow hover:bg-stone-50 active:translate-y-1 active:translate-x-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl">help</span>
+<span class="font-headline font-bold uppercase text-sm">Help &amp; Support</span>
+</div>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</section>
+<!-- Logout Button -->
+<section>
+<button class="w-full py-5 bg-[#DC2626] text-white hard-border neobrutal-shadow hover:bg-red-700 active:translate-y-1 active:translate-x-1 active:shadow-none transition-all flex justify-center items-center gap-3">
+<span class="material-symbols-outlined font-bold">logout</span>
+<span class="font-headline font-black uppercase tracking-widest">Logout</span>
+</button>
+<p class="mt-8 text-center font-mono text-[10px] text-on-surface-variant uppercase opacity-50">App Version 2.1.0-KINETIC</p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-2 bg-[#FBFBF9] dark:bg-stone-900 border-t-4 border-stone-900 dark:border-stone-50">
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-mono text-[10px] font-bold uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-mono text-[10px] font-bold uppercase mt-1">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="font-mono text-[10px] font-bold uppercase mt-1">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FDC800] text-stone-900 border-2 border-stone-900 px-4 py-1 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-mono text-[10px] font-bold uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#82ff99",
+                    "primary-dim": "#634d00",
+                    "on-surface-variant": "#5a5c5b",
+                    "surface-tint": "#715800",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#767776",
+                    "on-tertiary-fixed": "#004c1d",
+                    "on-secondary-container": "#3a1fcf",
+                    "on-surface": "#2d2f2e",
+                    "error-dim": "#b92902",
+                    "surface-variant": "#dbdddb",
+                    "on-primary-fixed": "#403000",
+                    "inverse-primary": "#fdc800",
+                    "on-primary": "#fff1d6",
+                    "tertiary-container": "#82ff99",
+                    "error-container": "#f95630",
+                    "on-error-container": "#520c00",
+                    "secondary-fixed-dim": "#c2bdff",
+                    "on-secondary": "#f5f1ff",
+                    "primary": "#715800",
+                    "secondary": "#4f3de3",
+                    "on-tertiary-container": "#006127",
+                    "error": "#b02500",
+                    "on-secondary-fixed": "#2700ad",
+                    "background": "#f6f6f5",
+                    "secondary-container": "#d1ccff",
+                    "on-primary-container": "#574300",
+                    "surface-dim": "#d3d5d3",
+                    "primary-fixed-dim": "#ecbb00",
+                    "inverse-surface": "#0c0f0e",
+                    "tertiary": "#006a2c",
+                    "primary-container": "#fdc800",
+                    "surface": "#f6f6f5",
+                    "inverse-on-surface": "#9c9d9c",
+                    "surface-container-high": "#e1e3e1",
+                    "surface-container-low": "#f0f1ef",
+                    "on-background": "#2d2f2e",
+                    "tertiary-dim": "#005d25",
+                    "primary-fixed": "#fdc800",
+                    "on-tertiary-fixed-variant": "#006c2d",
+                    "secondary-fixed": "#d1ccff",
+                    "on-tertiary": "#cfffcf",
+                    "surface-container": "#e7e8e6",
+                    "tertiary-fixed-dim": "#73f08c",
+                    "secondary-dim": "#432dd7",
+                    "surface-bright": "#f6f6f5",
+                    "outline-variant": "#acadac",
+                    "on-secondary-fixed-variant": "#442ed8",
+                    "on-primary-fixed-variant": "#624c00",
+                    "on-error": "#ffefec",
+                    "surface-container-highest": "#dbdddb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"],
+                    "mono": ["JetBrains Mono"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .neobrutalist-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(28,41,60,1);
+        }
+        .neobrutalist-shadow-sm {
+            box-shadow: 2px 2px 0px 0px rgba(28,41,60,1);
+        }
+        .active-press:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px rgba(28,41,60,1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- TopAppBar Section -->
+<header class="bg-[#FBFBF9] dark:bg-stone-900 border-b-4 border-stone-900 dark:border-stone-50 shadow-[4px_4px_0px_0px_rgba(28,41,60,1)] sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 border-2 border-stone-900 overflow-hidden bg-stone-200">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="portrait of a determined young athlete with focus in their eyes, minimalist studio lighting, sharp detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVaRdNKG0AwxubidYF1TZvKJvy_-as1qJ5o-HvwUGLpS12nvIthMi6mrXJxQvKne_GVKsjiIA8yvVvG1GNqM0Spl98Nws3Pd0lXbTs08lzzoOPErC9K7Fq1XXfXofGCV77v45NEncb_7ov4t8c-8ZJX-HvciF-I4nMGzjYSBQznKVHzLwS_SnNm_n6m0V4TvfAbVDd9dapi9cF4fW3L9UMK2HSKNqzSsfRB2ZAWJOm6xjwTmO5QB0frlIgZCPfnuSVAiQVjX-tNZ0"/>
+</div>
+<h1 class="font-bold tracking-tighter uppercase font-sans text-stone-900 dark:text-stone-50 text-xl">DAY 04</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-mono font-bold text-stone-900 dark:text-stone-50 text-lg">1,250 XP</span>
+<span class="material-symbols-outlined text-[#FDC800] filled-icon" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+<!-- LEVEL 04: WARRIOR Card -->
+<section class="bg-primary-container border-4 border-stone-900 p-6 neobrutalist-shadow relative overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="font-label text-stone-900 text-sm font-bold uppercase tracking-widest mb-1">Current Rank</h2>
+<h3 class="font-headline font-black text-4xl md:text-6xl text-stone-900 tracking-tighter leading-none">LEVEL 04: WARRIOR</h3>
+</div>
+<div class="flex-1 md:max-w-xs w-full">
+<div class="flex justify-between font-mono text-xs font-bold mb-2 uppercase">
+<span>Progress to LVL 05</span>
+<span>750 / 2000 XP</span>
+</div>
+<div class="h-8 bg-stone-900 border-2 border-stone-900 p-1">
+<div class="h-full bg-white w-[37.5%]"></div>
+</div>
+</div>
+</div>
+<!-- Decorative Brutalist Pattern -->
+<div class="absolute -right-4 -top-4 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-90xl" style="font-size: 160px;">swords</span>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Social Preview Card -->
+<section class="md:col-span-2 bg-secondary text-on-secondary border-4 border-stone-900 p-6 neobrutalist-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="flex -space-x-4">
+<div class="w-10 h-10 border-2 border-stone-900 bg-stone-100 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up headshot of male friend smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ_3gpW9LV7fPmWHrfvRj0F7RTdq2nPmhjvlinTnz0SrrervDdPdyNhc8dg2zcbJZ7jll6p3hSezzFaujrz5sO-00TQ_G0auWIgG_XDbEuoX3V2rSm2hCMlzUdP-rESI1dIJq31IqI4LzL7iG8rm1UWL09TDvQ4ZB_twfHoErJREwzvGDiH6vZ9NeYuuaYHEEwDGNY_mQFiAAeCoN_PY58c31IYnxgkA1LIlDc5ETZTZrZJgxd-6QRAFrJ0ANsv6kqDdv5j1wWJiU"/>
+</div>
+<div class="w-10 h-10 border-2 border-stone-900 bg-stone-100 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up headshot of female friend smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPuTDqyhaZ3R1tGBm84fq9kFHmfttCyeSfEpeapD0vU0L3upb-VOqr-itFWhNYkMJ22WOkpXphsUIdujES5Opx5terlJIEcF_WxP8RxG_4dwztR0Ruo0gKBrXQJnaXe8o7JDTwriznKl4hAO3yYkxj21nZzNd3vOIr118qQKhReydppVJR-SWlBSbJW1_AmJfPSTS9NZfYpcQoQUdIMBjqum5lv6V1amYKc5cnSps2-7WImib0AJOER-gSBFQ07Sj2Ctx-urOb4jo"/>
+</div>
+</div>
+<p class="font-headline font-bold text-xl leading-tight">Your friend scored 9/10 today</p>
+</div>
+<div class="bg-stone-900 p-4 inline-block">
+<p class="font-label text-primary-container text-xs uppercase font-bold mb-1">Global Standing</p>
+<p class="font-mono text-3xl font-black text-white">RANK: #12</p>
+</div>
+</div>
+<button class="mt-6 bg-primary-container text-stone-900 border-2 border-stone-900 py-3 px-6 font-bold uppercase tracking-tighter neobrutalist-shadow-sm active-press hover:bg-yellow-400 transition-colors w-fit">
+                    View Leaderboard
+                </button>
+</section>
+<!-- Weekly Velocity Graph -->
+<section class="bg-white border-4 border-stone-900 p-6 neobrutalist-shadow">
+<h2 class="font-label text-xs font-bold uppercase mb-4 text-stone-500">Weekly Velocity</h2>
+<div class="flex items-end justify-between h-32 gap-1">
+<div class="w-full bg-stone-100 border-t-2 border-stone-900 h-[40%] flex items-end"><div class="w-full bg-stone-900 h-1/2"></div></div>
+<div class="w-full bg-stone-100 border-t-2 border-stone-900 h-[60%] flex items-end"><div class="w-full bg-stone-900 h-3/4"></div></div>
+<div class="w-full bg-stone-100 border-t-2 border-stone-900 h-[30%] flex items-end"><div class="w-full bg-stone-900 h-1/4"></div></div>
+<div class="w-full bg-stone-100 border-t-2 border-stone-900 h-[80%] flex items-end"><div class="w-full bg-primary-container h-full"></div></div>
+<div class="w-full bg-stone-100 border-t-2 border-stone-900 h-[50%] flex items-end"><div class="w-full bg-stone-900 h-1/2"></div></div>
+<div class="w-full bg-stone-100 border-t-2 border-stone-900 h-[70%] flex items-end"><div class="w-full bg-stone-900 h-2/3"></div></div>
+<div class="w-full bg-stone-100 border-t-2 border-stone-900 h-[10%] flex items-end"><div class="w-full bg-stone-900 h-full"></div></div>
+</div>
+<div class="flex justify-between font-mono text-[10px] mt-2 text-stone-400">
+<span>M</span><span>T</span><span>W</span><span class="text-stone-900 font-bold">T</span><span>F</span><span>S</span><span>S</span>
+</div>
+<div class="mt-6 pt-4 border-t-2 border-stone-100">
+<p class="font-mono text-2xl font-black text-stone-900">+12% <span class="text-xs font-normal text-stone-500 block">VS LAST WEEK</span></p>
+</div>
+</section>
+</div>
+<!-- Premium Hooks Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Advanced Analytics Locked -->
+<div class="bg-surface-container-low border-4 border-stone-900 p-8 neobrutalist-shadow relative group overflow-hidden">
+<div class="absolute inset-0 bg-stone-900/5 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-stone-900 text-5xl mb-2 filled-icon" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="relative z-0 blur-sm">
+<h4 class="font-headline font-black text-2xl uppercase mb-2">Deep Insights</h4>
+<p class="font-body text-sm text-stone-600">Analyze your hormonal cycles and productivity peaks.</p>
+</div>
+<div class="absolute bottom-6 left-6 right-6 z-20">
+<button class="w-full bg-stone-900 text-white py-4 font-black uppercase text-sm tracking-widest neobrutalist-shadow-sm active-press">
+                        Unlock Advanced Analytics
+                    </button>
+</div>
+</div>
+<!-- Paid Challenge Locked -->
+<div class="bg-tertiary-fixed border-4 border-stone-900 p-8 neobrutalist-shadow relative overflow-hidden flex flex-col justify-between min-h-[220px]">
+<div class="flex justify-between items-start relative z-10">
+<div>
+<span class="bg-stone-900 text-white px-2 py-1 font-mono text-[10px] uppercase font-bold">New Challenge</span>
+<h4 class="font-headline font-black text-3xl uppercase mt-2 tracking-tighter leading-tight">21 DAY FAT LOSS</h4>
+</div>
+<span class="material-symbols-outlined text-stone-900 text-3xl">lock</span>
+</div>
+<div class="flex items-end justify-between relative z-10">
+<p class="font-mono text-2xl font-black">₹299</p>
+<button class="bg-stone-900 text-white px-6 py-3 font-black uppercase text-xs tracking-widest neobrutalist-shadow-sm active-press">
+                        Join Now
+                    </button>
+</div>
+<!-- Abstract BG Shape -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/30 rounded-full blur-3xl pointer-events-none"></div>
+</div>
+</section>
+<!-- Remarks Section (Editorial Style) -->
+<section class="mt-12 py-8 border-t-4 border-stone-900">
+<h2 class="font-label text-xs font-bold uppercase mb-4 text-stone-400">Daily Remarks</h2>
+<blockquote class="text-3xl md:text-5xl font-headline font-bold italic text-stone-900 tracking-tight leading-none">
+                "Not every day is productive, but I didn't quit."
+            </blockquote>
+<p class="mt-4 font-mono text-xs text-stone-500 uppercase">— Journal Entry #04</p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-2 bg-surface border-t-4 border-stone-900 dark:border-stone-50">
+<a class="flex flex-col items-center justify-center bg-[#FDC800] text-stone-900 border-2 border-stone-900 px-4 py-1 shadow-[2px_2px_0px_0px_rgba(28,41,60,1)] active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined filled-icon">home</span>
+<span class="font-mono text-[10px] font-bold uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-mono text-[10px] font-bold uppercase">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="font-mono text-[10px] font-bold uppercase">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-4 py-1 hover:bg-yellow-400 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-mono text-[10px] font-bold uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

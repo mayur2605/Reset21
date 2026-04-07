@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#f5f1ff",
+                    "tertiary-fixed": "#82ff99",
+                    "surface-container-highest": "#dbdddb",
+                    "surface-tint": "#715800",
+                    "surface-variant": "#dbdddb",
+                    "on-secondary-fixed": "#2700ad",
+                    "primary-dim": "#634d00",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#9c9d9c",
+                    "tertiary-dim": "#005d25",
+                    "primary": "#715800",
+                    "on-tertiary": "#cfffcf",
+                    "outline": "#767776",
+                    "secondary-container": "#d1ccff",
+                    "secondary": "#4f3de3",
+                    "on-surface-variant": "#5a5c5b",
+                    "on-tertiary-container": "#006127",
+                    "secondary-dim": "#432dd7",
+                    "primary-fixed": "#fdc800",
+                    "tertiary-fixed-dim": "#73f08c",
+                    "on-tertiary-fixed-variant": "#006c2d",
+                    "inverse-primary": "#fdc800",
+                    "on-error": "#ffefec",
+                    "error-container": "#f95630",
+                    "on-primary-fixed": "#403000",
+                    "on-primary-fixed-variant": "#624c00",
+                    "error": "#b02500",
+                    "inverse-surface": "#0c0f0e",
+                    "on-surface": "#2d2f2e",
+                    "error-dim": "#b92902",
+                    "tertiary-container": "#82ff99",
+                    "surface-dim": "#d3d5d3",
+                    "secondary-fixed-dim": "#c2bdff",
+                    "on-primary": "#fff1d6",
+                    "on-primary-container": "#574300",
+                    "on-secondary-container": "#3a1fcf",
+                    "outline-variant": "#acadac",
+                    "secondary-fixed": "#d1ccff",
+                    "background": "#f6f6f5",
+                    "on-tertiary-fixed": "#004c1d",
+                    "surface-container": "#e7e8e6",
+                    "surface-container-low": "#f0f1ef",
+                    "primary-fixed-dim": "#ecbb00",
+                    "on-secondary-fixed-variant": "#442ed8",
+                    "surface": "#f6f6f5",
+                    "surface-bright": "#f6f6f5",
+                    "on-error-container": "#520c00",
+                    "primary-container": "#fdc800",
+                    "on-background": "#2d2f2e",
+                    "tertiary": "#006a2c",
+                    "surface-container-high": "#e1e3e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"],
+                    "mono": ["JetBrains Mono"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neobrutalist-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(28,41,60,1);
+        }
+        .neobrutalist-shadow-sm {
+            box-shadow: 2px 2px 0px 0px rgba(28,41,60,1);
+        }
+        .kinetic-press:active {
+            transform: translate(4px, 4px);
+            box-shadow: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full border-b-4 border-stone-900 bg-[#FBFBF9] dark:bg-stone-950 z-50 flex justify-between items-center px-4 h-16 shadow-[4px_4px_0px_0px_rgba(28,41,60,1)]">
+<div class="flex items-center gap-3">
+<button class="material-symbols-outlined text-stone-900 dark:text-stone-50 p-1 hover:bg-stone-100 transition-all">menu</button>
+<h1 class="font-['Inter'] font-black tracking-tighter uppercase text-2xl text-stone-900 dark:text-stone-50">RESET21</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-['JetBrains_Mono'] font-bold text-sm bg-primary-container px-3 py-1 border-2 border-stone-900 neobrutalist-shadow-sm">LVL 02 WARRIOR</span>
+<span class="font-['JetBrains_Mono'] font-bold text-sm text-stone-900 dark:text-stone-50">320 XP</span>
+</div>
+</header>
+<main class="mt-20 px-4 max-w-2xl mx-auto space-y-6">
+<!-- Progress Motivation Banner -->
+<section class="bg-secondary text-on-secondary p-6 border-4 border-stone-900 neobrutalist-shadow relative overflow-hidden">
+<div class="absolute -right-4 -top-4 opacity-20">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="relative z-10">
+<p class="font-label text-xs uppercase tracking-widest mb-1 opacity-80">Current Momentum</p>
+<h2 class="font-headline font-black text-2xl leading-tight mb-4">1 task away from 80% — Complete all for PERFECT DAY</h2>
+<div class="w-full h-8 bg-stone-900 border-2 border-stone-900 overflow-hidden">
+<div class="h-full bg-tertiary-fixed transition-all" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between mt-2 font-mono text-xs">
+<span>7/10 COMPLETE</span>
+<span>72%</span>
+</div>
+</div>
+</section>
+<!-- Insights Bento Grid -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 border-4 border-stone-900 neobrutalist-shadow">
+<p class="font-label text-[10px] uppercase font-bold text-stone-500 mb-2">Efficiency</p>
+<div class="flex items-end gap-2">
+<span class="font-mono text-3xl font-black text-tertiary">+2</span>
+<span class="font-label text-xs mb-1">vs YESTERDAY</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 border-4 border-stone-900 neobrutalist-shadow">
+<p class="font-label text-[10px] uppercase font-bold text-stone-500 mb-2">Competition</p>
+<div class="flex items-end gap-2">
+<span class="font-mono text-3xl font-black text-secondary">#412</span>
+<span class="font-label text-xs mb-1">RANK</span>
+</div>
+</div>
+</div>
+<!-- Habit List Section -->
+<section class="space-y-4">
+<div class="flex justify-between items-center mb-2">
+<h3 class="font-headline font-black uppercase text-lg tracking-tight">Today's Discipline</h3>
+<span class="font-mono text-xs bg-stone-900 text-white px-2 py-1">2023.OCT.24</span>
+</div>
+<!-- Habit Card: Wake Up -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 neobrutalist-shadow group">
+<div class="p-4 flex items-center justify-between border-b-4 border-stone-900">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary-container border-4 border-stone-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900" style="font-variation-settings: 'FILL' 1;">alarm</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg leading-none mb-1">Wake up @ 6am</h4>
+<span class="font-mono text-[10px] uppercase bg-tertiary/20 text-tertiary font-bold px-1">Strong move 💪</span>
+</div>
+</div>
+<div class="w-8 h-8 border-4 border-stone-900 bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white font-black" style="font-variation-settings: 'wght' 900;">close</span>
+</div>
+</div>
+<div class="flex font-label text-[10px] uppercase font-bold">
+<div class="flex-1 text-center py-2 bg-stone-100 opacity-30">Swipe Left: Missed</div>
+<div class="flex-1 text-center py-2 bg-tertiary/10 text-tertiary">Done</div>
+</div>
+</div>
+<!-- Habit Card: Meditation (In Progress) -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 neobrutalist-shadow">
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-stone-200 border-4 border-stone-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900">self_improvement</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg leading-none mb-1 text-stone-900/50">Meditation</h4>
+<span class="font-mono text-[10px] uppercase text-stone-400 font-bold">In Progress</span>
+</div>
+</div>
+<div class="w-8 h-8 border-4 border-stone-900 bg-white"></div>
+</div>
+</div>
+<!-- Habit Card: Exercise -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 neobrutalist-shadow">
+<div class="p-4 flex items-center justify-between border-b-4 border-stone-900">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary-container border-4 border-stone-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg leading-none mb-1">Exercise</h4>
+<span class="font-mono text-[10px] uppercase bg-tertiary/20 text-tertiary font-bold px-1">COMPLETED</span>
+</div>
+</div>
+<div class="w-8 h-8 border-4 border-stone-900 bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white font-black" style="font-variation-settings: 'wght' 900;">close</span>
+</div>
+</div>
+</div>
+<!-- Habit Card: 10K Steps -->
+<div class="bg-surface-container-lowest border-4 border-stone-900 neobrutalist-shadow">
+<div class="p-4 flex items-center justify-between border-b-4 border-stone-900">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary-container border-4 border-stone-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-stone-900" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg leading-none mb-1">10K Steps</h4>
+<span class="font-mono text-[10px] uppercase font-bold text-stone-900">8,432 / 10,000</span>
+</div>
+</div>
+<div class="w-8 h-8 border-4 border-stone-900 bg-white"></div>
+</div>
+<div class="w-full h-2 bg-stone-200">
+<div class="h-full bg-primary" style="width: 84%;"></div>
+</div>
+</div>
+</section>
+<!-- Daily Insights Summary -->
+<section class="bg-stone-900 text-white p-6 border-4 border-stone-900 neobrutalist-shadow">
+<h3 class="font-headline font-black uppercase text-xl mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed">analytics</span>
+                Daily Insights
+            </h3>
+<div class="space-y-4 font-mono text-sm">
+<div class="flex justify-between items-center border-b border-stone-700 pb-2">
+<span class="text-stone-400 uppercase">Most missed habit</span>
+<span class="text-error-container font-bold">MEDITATION (3x streak)</span>
+</div>
+<div class="flex justify-between items-center border-b border-stone-700 pb-2">
+<span class="text-stone-400 uppercase">Best habit</span>
+<span class="text-tertiary-fixed font-bold">EXERCISE</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-stone-400 uppercase">Top user average</span>
+<span class="font-bold">9/10 TODAY</span>
+</div>
+</div>
+</section>
+<!-- Competition Card -->
+<section class="border-4 border-stone-900 p-4 bg-surface-container-high neobrutalist-shadow">
+<div class="flex items-center gap-4">
+<img alt="minimalist vector avatars of top performers in dark bold outlines and primary colors" class="w-24 h-12 object-cover border-2 border-stone-900" data-alt="minimalist group of three stylized profile icons with heavy black outlines and yellow backgrounds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzTMssmo5BgI1jzgBCPvDaelMmelAMN7gebDUd79elcMcZzNA5jit0A4R1SN1k65auOvc02dWXEAv9X10LAkO21qr1_c2DQ5UgIHYijQHBdNvW-h5zZabs6GvOf6ORyqkPCpR3VWajDsTN9hpt8LyydVcWWXKvcWN_VCUq7rjJM3FyO5JHLanalYATBr7izsJ4vWpn5IWzLqpwWoHA3FdTEdg9_vr21f-blZ4izee5FwMD_QE_fTUr5Ln8CUs6RIADumB88gnd1gA"/>
+<div>
+<h4 class="font-headline font-black text-sm uppercase">Competition status</h4>
+<p class="font-label text-[11px] leading-tight text-stone-600">You are in the top 15% of Warriors this week. Keep going to enter Legend tier.</p>
+</div>
+</div>
+</section>
+<!-- Quotes Section (Editorial Personality) -->
+<footer class="py-8 text-center px-4">
+<p class="font-headline italic text-stone-400 text-lg">"Not every day is productive, but I didn't quit."</p>
+</footer>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-2 bg-[#FBFBF9] dark:bg-stone-950 border-t-4 border-stone-900 dark:border-stone-50 z-50">
+<a class="flex flex-col items-center justify-center bg-[#FDC800] text-stone-900 border-2 border-stone-900 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] py-1 px-3 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['JetBrains_Mono'] text-xs font-bold uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 py-1 px-3 hover:text-stone-900 dark:hover:text-stone-100 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="event_note">event_note</span>
+<span class="font-['JetBrains_Mono'] text-xs font-bold uppercase">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 py-1 px-3 hover:text-stone-900 dark:hover:text-stone-100 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="leaderboard">leaderboard</span>
+<span class="font-['JetBrains_Mono'] text-xs font-bold uppercase">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 py-1 px-3 hover:text-stone-900 dark:hover:text-stone-100 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['JetBrains_Mono'] text-xs font-bold uppercase">Profile</span>
+</a>
+</nav>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-24 left-0 w-full px-4 z-40 pointer-events-none">
+<button class="pointer-events-auto w-full h-16 bg-primary-container border-4 border-stone-900 neobrutalist-shadow kinetic-press font-headline font-black text-xl uppercase tracking-tighter flex items-center justify-center gap-2">
+            LOCK DAY &amp; EARN XP
+            <span class="material-symbols-outlined font-black">lock</span>
+</button>
+</div>
+</body></html>
