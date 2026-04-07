@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/stats_provider.dart';
 import '../design_system.dart';
 import '../widgets/kinetic_components.dart';
+import '../widgets/account_bottom_sheet.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -18,7 +19,16 @@ class DashboardScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('DASHBOARD', style: AppTypography.displayLarge),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('DASHBOARD', style: AppTypography.displayLarge),
+                  IconButton(
+                    onPressed: () => AccountBottomSheet.show(context),
+                    icon: const Icon(Icons.account_circle_outlined, color: AppColors.text, size: 32),
+                  ),
+                ],
+              ),
               const SizedBox(height: 24),
               KineticCard(
                 backgroundColor: AppColors.primary,

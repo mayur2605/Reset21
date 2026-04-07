@@ -42,6 +42,18 @@ class _ChecklistScreenState extends ConsumerState<ChecklistScreen> {
         (v) => ref.read(statsProvider.notifier).resetStreak(v),
       );
 
+      // Sync reconciled profile to Supabase
+      final updatedStats = ref.read(statsProvider);
+      final updatedSession = ref.read(daySessionProvider);
+      DatabaseService.syncProfile(
+        currentDay: updatedSession.currentDay,
+        streak: updatedStats.currentStreak,
+        xp: updatedStats.totalXp,
+        level: updatedStats.level,
+        dayLocked: updatedSession.dayLocked,
+        lastCompletedDate: updatedSession.lastCompletedDate,
+      );
+
       // Schedule notifications with the current day
       final day = ref.read(daySessionProvider).currentDay;
       NotificationService.scheduleDailyReminders(currentDay: day);
@@ -214,15 +226,26 @@ class _ChecklistScreenState extends ConsumerState<ChecklistScreen> {
       // 3. Persist habits
       await DatabaseService.saveHabitsOffline(habits);
 
-      // 4. Supabase write sync (non-blocking, queues on failure)
+      // 4. Supabase write sync (normalized tables)
       final updatedStats = ref.read(statsProvider);
+      
+      // Update Daily logs (normalized)
       await DatabaseService.syncDailyLog(
-        userId: 'local_user',
         date: DateTime.now().toIso8601String().split('T').first,
         habits: habits,
         score: score,
         xp: xpGained,
         streak: updatedStats.currentStreak,
+      );
+
+      // Update Profile (Stats)
+      await DatabaseService.syncProfile(
+        currentDay: daySession.currentDay,
+        streak: updatedStats.currentStreak,
+        xp: updatedStats.totalXp,
+        level: updatedStats.level,
+        dayLocked: true,
+        lastCompletedDate: DateTime.now().toIso8601String().split('T').first,
       );
 
       // 5. Analytics

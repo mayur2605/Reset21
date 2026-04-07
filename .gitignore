@@ -21,6 +21,9 @@ migrate_working_dir/
 # VS Code related
 .vscode/
 
+# Cursor related
+.cursor/
+
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
@@ -61,3 +64,15 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
+
+# Agent related
+.agents/
+.claude/
+.gemini/
+
+# Supabase related
+supabase/.temp/
+supabase/functions/.env
+
+# User requested: Ignore all markdown files
+*.md

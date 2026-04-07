@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:developer' as dev;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'services/database_service.dart';
 import 'services/notification_service.dart';
 import 'ui/screens/checklist_screen.dart';
@@ -11,6 +12,13 @@ void main() async {
   // Global error handler — catches unhandled exceptions
   runZonedGuarded(() async {
     WidgetsFlutterBinding.ensureInitialized();
+
+    // Load environment variables
+    try {
+      await dotenv.load(fileName: ".env");
+    } catch (e) {
+      dev.log('[main] dotenv.load failed: $e', name: 'Reset21');
+    }
 
     // Initialize Hive + Supabase + Sync Queue
     try {
